@@ -1,0 +1,164 @@
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    width: 1400px;
+}
+
+p {
+    font-family: 'shrikhand', cursive;
+}
+
+
+
+@media screen and (max-device-width: 768px){
+
+body {
+    max-width: 768px;
+}
+
+.logohead {
+    width: 95%;
+    margin-top: 6%;
+    margin-bottom: 3%;
+    text-align: center;
+}
+
+#logo1 {
+    width: 50%;
+}
+
+.recherche {
+
+    display: flex;
+    justify-content: start;
+    font-size: 190%;
+    height: 90px;
+    width:95%;
+    border: 3px solid green;
+}
+
+.icone_rech {
+    padding-right: 4%;
+    padding-top: 25px;
+    padding-left: 187px;
+}
+
+.texte_rech {
+    padding-top: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.fonction {
+    display: flex;
+    font-size: 240%;
+    width: 86%;
+    height: 180px;
+    margin-left: 60px;
+    border: 3px solid black;
+    border-radius: 60px;
+}
+
+.iconechiffre {
+    position: absolute;
+    font-size: 240%;
+    width: 50px;
+    height: 50px;
+    margin-top: 10%;
+    border: 3px solid red;
+    border-radius: 30px;
+}
+
+.chiffre {
+    padding-left: 14px;
+    
+}
+
+.iconefonct {
+    margin-top: 10%;
+    
+}
+
+.textefonct {
+    margin-top: 10%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.restaurants {
+    width: 100%;
+    height: 2000px;
+}
+
+.cartes {
+    display: flex;
+    width: 95%;
+    height: 480px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.bloc {
+    width: 246px;
+    height: 210px;
+}
+
+.photobloc {
+    width: 235px;
+    height: 124px;
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+#lapalette, #lanote, #lafrance, #ledelice {
+    width: 234px; 
+    
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+}
+
+}
+
+
+
+
+
+
+
+
