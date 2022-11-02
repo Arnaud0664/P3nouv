@@ -1,10 +1,56 @@
+/*variables*/
+
+
+
+
+
+/*fonctions*/
+
+
+
+
+
+
+/*mixins*/
+
+
+
+
+/*base (police, couleurs)*/
+
+$violet: #9356DC;
+$rose: #FF79DA;
+$vert: #99E2D0;
+$fond: rgb(225, 225, 225);
+
+
+
+
+/*composants secondaires (boutons,..)*/
+
+
+
+
+
+/*BEM réutilisables et vitaux (header, footer..)*/
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 body {
     font-family: 'Roboto', sans-serif;
     width: 1400px;
 }
-
 p {
     font-family: 'shrikhand', cursive;
 }
@@ -161,8 +207,74 @@ body {
     left: 50%; 
     transform: translate(-50%, -50%);
 }
-
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
