@@ -12,6 +12,32 @@
 
 
 /*mixins*/
+@mixin bouton {
+    font-size: 28px;
+    width: 420px;
+    height: 90px;
+    background: linear-gradient($rose, $violet);
+    color: white;
+    border: transparent;
+    border-radius: 50px;
+    box-shadow: 3px 3px 20px gray;
+    margin-left: 170px;
+    &:hover {
+        
+        @include shad-hover;
+    }
+}
+
+@mixin dégradé {
+    
+}
+
+
+
+@mixin shad-hover {
+    box-shadow: 5px 5px 20px rgb(200, 200, 200);
+}
+
 
 
 
@@ -21,7 +47,15 @@
 $violet: #9356DC;
 $rose: #FF79DA;
 $vert: #99E2D0;
-$fond: rgb(225, 225, 225);
+$fond: rgb(248, 248, 248);
+$violetlight: #a070db;
+$roselight: #ff96e1;
+
+
+$titre: 52px;
+$texte: 30px;
+
+$shadow: 3px 3px 20px rgb(200, 200, 200);
 
 
 
@@ -51,6 +85,7 @@ body {
     font-family: 'Roboto', sans-serif;
     width: 1400px;
 }
+
 p {
     font-family: 'shrikhand', cursive;
 }
@@ -74,14 +109,19 @@ body {
     width: 50%;
 }
 
-.recherche {
+.presentation {
+    background-color: $fond;
+    height: 680px;
+}
 
+.recherche {
+    font-size: 30px;
+    height: 90px;
+    width:100%;
+    background-color: rgb(235, 235, 235);
     display: flex;
     justify-content: start;
-    font-size: 200%;
-    height: 90px;
-    width:95%;
-    border: 3px solid green;
+    box-shadow: 0px -3px 5px rgb(200, 200, 200);
 }
 
 .icone_rech {
@@ -94,6 +134,32 @@ body {
     padding-top: 25px;
 }
 
+h1 {
+    font-size: $titre;
+    text-align: center;
+    width: 75%;
+    padding-left: 80px;
+    padding-top: 35px;
+}
+
+h2 {
+    font-size: 35px;
+    font-weight: 100;
+    text-align: center;
+    width: 79%;
+    padding-left: 75px;
+}
+
+.btn {
+    @include bouton;
+    margin-top: 35px;
+}
+
+h3 {
+    font-size: $titre;
+    margin-left: 40px;
+    margin-top: 100px;
+}
 
 
 
@@ -108,44 +174,46 @@ body {
 
 
 
-
-
-
-
-
-
-
-
+.fonctionnement {
+    height: 750px;
+}
 
 .fonction {
     display: flex;
-    font-size: 200%;
+    font-size: $texte;
     width: 86%;
     height: 150px;
     margin-top: 50px;
     margin-left: 60px;
-    border: 3px solid black;
+    background-color: $fond;
     border-radius: 60px;
+    box-shadow: $shadow;
+}
+
+.fonction:hover {
+    @include shad-hover;
+    background: linear-gradient ($roselight, $violetlight);
 }
 
 .iconechiffre {
     position: absolute;
-    font-size: 200%;
-    width: 50px;
-    height: 50px;
-    margin-top: 28%;
-    margin-left: 32px;
-    border: 3px solid red;
+    font-size: 26px;
+    width: 40px;
+    height: 40px;
+    color: white;
+    background-color: $violet;
+    margin-top: 107px;
+    margin-left: 40px;
     border-radius: 30px;
 }
 
 .iconechiffre1 {
-    margin-top: 23%;
+    margin-top: 57px;
 }
 
 .chiffre {
-    padding-left: 16px;
-    padding-top: 5px;
+    padding-left: 12px;
+    padding-top: 4px;
     
 }
 
@@ -166,47 +234,179 @@ body {
 
 
 
+a {
+    text-decoration: none;
+    color: #000000;
+}
 
+a:visited {
+    text-decoration: none;
+    color: #000000;
+}
 
-
-
-
-
+h4 {
+    font-size: $titre;
+    padding-top: 90px;
+    padding-left: 40px;
+}
 
 .restaurants {
     width: 100%;
-    height: 2000px;
+    height: 2630px;
+    background-color: $fond;
 }
 
 .cartes {
     display: flex;
-    width: 95%;
-    height: 480px;
+    width: 100%;
+    height: 2340px;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
 .bloc {
-    width: 246px;
-    height: 210px;
+    width: 90%;
+    height: 540px;
+    border-radius: 30px;
+    background-color: white;
 }
 
 .photobloc {
-    width: 235px;
-    height: 124px;
-    position: relative;
+    width: 100%;
+    height: 75%;
     overflow: hidden;
+    border-radius: 30px 30px 0 0;
+    z-index: 1;
 }
 
-
-
 #lapalette, #lanote, #lafrance, #ledelice {
-    width: 234px; 
-    
+    width: 100%; 
+    position: relative;
     top: 50%; 
     left: 50%; 
     transform: translate(-50%, -50%);
 }
+
+.nouveau {
+    background-color: $vert;
+    color: #0d9875;
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 50px;
+    text-align: center;
+    width: 144px;
+    height: 50px;
+    margin-top: 30px;
+    margin-left: 525px;
+    position: absolute;
+    z-index: 2;
+}
+
+.corpsbloc {
+    display: flex;
+    font-size: $texte;
+}
+
+.nombloc {
+    width: 250px;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.lieubloc {
+    position: absolute;
+    margin-top: 70px;
+    margin-left: 20px;
+    width: 300px;
+}
+
+.coeur {
+    margin-left: 320px;
+    font-size: 50px;
+    margin-top: 35px;
+}
+
+.footer {
+    height: 360px;
+    background-color: rgb(60, 60, 60);
+    
+}
+
+
+.logofoot {
+    padding-left: 40px;
+    padding-top: 50px;
+}
+
+#logo2 {
+    filter: invert(100%);
+}
+
+ul {
+    font-size: $texte;
+    list-style-type: none;
+}
+
+li {
+    padding-bottom: 12px;
+    color: white;
+}
+
+.proposer {
+    padding-left: 30px;
+}
+
+.devenir {
+    padding-left: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 
