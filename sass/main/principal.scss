@@ -1,7 +1,7 @@
 /*variables*/
 
 
-
+@import "./../blocsvariables.scss";
 
 
 
@@ -113,7 +113,7 @@ body {
 }
 
 .presentation {
-    background-color: $fond;
+    background-color: $bleu;
     height: 680px;
 }
 
