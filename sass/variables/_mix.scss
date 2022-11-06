@@ -9,11 +9,10 @@
     border-radius: 50px;
     box-shadow: 3px 3px 20px gray;
     margin-left: 170px;
+    transition: all 100ms;
     &:hover {
-        @include shad-hover;
+        transform: scale(1);
+       background: linear-gradient($roselight, $violetlight);
+       box-shadow: 5px 5px 20px rgb(200, 200, 200);
     }
-}
-
-@mixin shad-hover {
-    box-shadow: 5px 5px 20px rgb(200, 200, 200);
 }
