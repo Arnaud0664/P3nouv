@@ -12,8 +12,8 @@
     transition: all 100ms;
     &:hover {
         transform: scale(1);
-       background: linear-gradient($roselight, $violetlight);
-       box-shadow: 5px 5px 20px rgb(200, 200, 200);
+        background: linear-gradient($roselight, $violetlight);
+        box-shadow: 10px 10px 20px rgb(200, 200, 200);
     }
 }
 

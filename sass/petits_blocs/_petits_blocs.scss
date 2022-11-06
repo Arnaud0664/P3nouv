@@ -19,8 +19,7 @@
 }
 
 .fonction:hover {
-    @include shad-hover;
-    background: linear-gradient ($roselight, $violetlight);
+    background-color: #a68ac9;
 }
 
 .iconechiffre {
