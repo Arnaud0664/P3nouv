@@ -24,8 +24,7 @@ p {
     box-shadow: 3px 3px 20px rgb(200, 200, 200);
   }
   .fonction:hover {
-    box-shadow: 5px 5px 20px;
-    background: linear-gradient #ff96e1, #a070db;
+    background-color: #a68ac9;
   }
   .iconechiffre {
     position: absolute;
@@ -127,7 +126,7 @@ h2 {
 .btn:hover {
   transform: scale(1);
   background: linear-gradient(#ff96e1, #a070db);
-  box-shadow: 5px 5px 20px rgb(200, 200, 200);
+  box-shadow: 10px 10px 20px rgb(200, 200, 200);
 }
 
 h3 {
