@@ -16,9 +16,20 @@
 
 
 
+@mixin coeur {
+    position: absolute;
+    margin-bottom: 100px;
+    font-size: 50px;
+    transition: background-image 3s linear, border;
+    &:active {
+        background-image: linear-gradient($violet, $rose);
+        border: transparent;
+    }
+}
 
-
-
+.coeur {
+     @include coeur   
+}
 
 
 

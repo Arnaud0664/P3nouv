@@ -124,7 +124,6 @@ h2 {
   margin-top: 35px;
 }
 .btn:hover {
-  transform: scale(1);
   background: linear-gradient(#ff96e1, #a070db);
   box-shadow: 10px 10px 20px rgb(128, 128, 128);
 }
@@ -260,6 +259,17 @@ li {
 
 .devenir {
   padding-left: 20px;
+}
+
+.coeur {
+  position: absolute;
+  margin-bottom: 100px;
+  font-size: 50px;
+  transition: background-image 3s linear, border;
+}
+.coeur:active {
+  background-image: linear-gradient(#9356DC, #FF79DA);
+  border: transparent;
 }
 
 /*# sourceMappingURL=style1.css.map */
