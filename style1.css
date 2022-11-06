@@ -24,7 +24,8 @@ p {
     box-shadow: 3px 3px 20px rgb(200, 200, 200);
   }
   .fonction:hover {
-    background-color: #ffd0f2;
+    background-color: #FF79DA;
+    opacity: 0.3;
   }
   .iconechiffre {
     position: absolute;
