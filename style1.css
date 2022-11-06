@@ -25,7 +25,6 @@ p {
   }
   .fonction:hover {
     background-color: #f4ecfd;
-    opacity: 0.3;
   }
   .iconechiffre {
     position: absolute;
