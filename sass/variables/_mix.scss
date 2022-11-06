@@ -1,0 +1,19 @@
+
+@mixin bouton {
+    font-size: 28px;
+    width: 420px;
+    height: 90px;
+    background: linear-gradient($rose, $violet);
+    color: white;
+    border: transparent;
+    border-radius: 50px;
+    box-shadow: 3px 3px 20px gray;
+    margin-left: 170px;
+    &:hover {
+        @include shad-hover;
+    }
+}
+
+@mixin shad-hover {
+    box-shadow: 5px 5px 20px rgb(200, 200, 200);
+}
