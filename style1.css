@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   font-family: "Roboto", sans-serif;
   width: 1400px;
@@ -255,14 +256,32 @@ li {
   padding-left: 20px;
 }
 
-.coeur {
+@keyframes étapes {
+  0% {
+    color: transparent;
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.fa_regular_fa-heart {
   margin-left: 320px;
   font-size: 50px;
   margin-top: 35px;
-  transition: all 3s linear;
+  transition: backgound-image 10s linear;
+  transition: color 100ms;
+  background: red;
 }
-.coeur:active {
-  background-color: linear-gradient(#9356DC, #FF79DA);
+.fa_regular_fa-heart:active {
+  animation: étapes 0.3s ease-in-out;
+  display: inline-block;
+  opacity: 1;
+  background-image: linear-gradient(#9356DC, #FF79DA);
+  color: transparent;
 }
 
 /*# sourceMappingURL=style1.css.map */

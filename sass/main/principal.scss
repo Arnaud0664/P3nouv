@@ -9,8 +9,18 @@
 @import "./../pages/menu";
 
 
-
-
+@keyframes étapes {
+    0% {
+        color: transparent;
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
 
 
 
@@ -20,19 +30,22 @@
     margin-left: 320px;
     font-size: 50px;
     margin-top: 35px;
-    transition: all 3s linear;
+    transition: backgound-image 10s linear;
+    transition: color 100ms;
     &:active {
-        background-color: linear-gradient($violet, $rose);
-    
+        animation: étapes 0.3s ease-in-out;
+        display: inline-block;
+        opacity: 1;
+        background-image: linear-gradient($violet, $rose);
+        color: transparent;
+
+        
     }
 }
 
-.coeur {
-    @include coeur;
-}
-
-.fa-heart {
-    
+.fa_regular_fa-heart {
+     @include coeur;
+    background: red; 
 }
 
 
