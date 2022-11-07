@@ -22,14 +22,13 @@
     margin-top: 35px;
     transition: all 3s linear;
     &:active {
-        color: linear-gradient($violet, $rose);
+        background-color: linear-gradient($violet, $rose);
     
     }
 }
 
 .fa-heart {
     @include coeur;
-    border: transparent;
 }
 
 

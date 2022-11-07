@@ -262,7 +262,7 @@ li {
   transition: all 3s linear;
 }
 .fa-heart:active {
-  color: linear-gradient(#9356DC, #FF79DA);
+  background-color: linear-gradient(#9356DC, #FF79DA);
 }
 
 /*# sourceMappingURL=style1.css.map */
