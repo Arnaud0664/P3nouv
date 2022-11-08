@@ -9,17 +9,6 @@
 @import "./../pages/menu";
 
 
-@keyframes étapes {
-    0% {
-        opacity: 0;
-    }
-    50% {
-        opacity: 0.5;
-    }
-    100% {
-        opacity: 1;
-    }
-}
 
 
 #fa_solid {
@@ -29,9 +18,9 @@
     position: absolute;
     width: 10%; 
     opacity: 0;
+    cursor: pointer;
+    transition: all 250ms;
     &:active {
-        animation: étapes 200ms;
-        animation-fill-mode: forwards;
         opacity: 1;
         background-image: linear-gradient($violet, $rose);
         background-clip: text;
@@ -47,16 +36,43 @@
     font-size: 50px;
     margin-top: 35px;
     &:active {
-        opacity: 0;
+        display: none;
     }
  }   
 
+ $breakpoints: (
+    mobile: 768px,
+    tablette: 992px,
+    desktop: 1400px,
+);
 
+@mixin mobile {
+    @media screen and (max-width: map-get($breakpoints, mobile)) {
+        @content;
+    }
+}
 
+@mixin mobile {
+    @media screen and (max-width: map-get($breakpoints, tablette)) {
+        @content;
+    }
+}
 
+@mixin mobile {
+    @media screen and (max-width: map-get($breakpoints, desktop)) {
+        @content;
+    }
+}
 
-
-
+/*ex
+.proj-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  @include mobile{
+      grid-template-columns: 1fr;
+  }
+}
+*/
 
 
 

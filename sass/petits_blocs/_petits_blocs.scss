@@ -1,7 +1,7 @@
 
 /* fonctionnement */
 
-@media screen and (max-device-width: 768px){
+@media screen and (max-width: 768px){
 .fonctionnement {
     height: 750px;
 }
@@ -20,6 +20,7 @@
 
 .fonction:hover {
     background-color: #f4ecfd;
+    box-shadow: 6px 6px 20px;
 }
 
 .iconechiffre {
