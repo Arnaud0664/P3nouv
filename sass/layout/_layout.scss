@@ -1,2 +1,61 @@
 
 
+
+
+body {
+    max-width: 768px;
+}
+
+/* header */
+.logohead {
+    width: 95%;
+    margin-top: 6%;
+    margin-bottom: 3%;
+    text-align: center;
+
+    #logo1 {
+    width: 50%;
+    }
+}
+
+
+/* footer */
+.footer {
+    height: 360px;
+    background-color: rgb(60, 60, 60);
+    
+    &_logo {
+        padding-left: 40px;
+        padding-top: 50px;
+    
+        #logo2 {
+            filter: invert(100%);
+        }
+    }
+
+    ul {
+        font-size: $texte;
+        list-style-type: none; 
+
+        li {
+            padding-bottom: 12px;
+            color: white;
+        }
+
+        .proposer {
+            padding-left: 30px;
+        }
+
+        .devenir {
+            padding-left: 20px;
+        }
+        
+        .mailto {
+            text-decoration: none;
+            
+            &:visited {
+                text-decoration: none;
+            }
+        }
+    }
+}    
