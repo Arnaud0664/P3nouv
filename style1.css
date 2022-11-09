@@ -21,6 +21,54 @@ body {
   max-width: 768px;
 }
 
+/* header */
+.logohead {
+  width: 95%;
+  margin-top: 6%;
+  margin-bottom: 3%;
+  text-align: center;
+}
+.logohead #logo1 {
+  width: 50%;
+}
+
+/* footer */
+.footer {
+  height: 360px;
+  background-color: rgb(60, 60, 60);
+}
+.footer_logo {
+  padding-left: 40px;
+  padding-top: 50px;
+}
+.footer_logo #logo2 {
+  filter: invert(100%);
+}
+.footer ul {
+  font-size: 30px;
+  list-style-type: none;
+}
+.footer ul li {
+  padding-bottom: 12px;
+  color: white;
+}
+.footer ul .proposer {
+  padding-left: 30px;
+}
+.footer ul .devenir {
+  padding-left: 20px;
+}
+.footer ul .mailto {
+  text-decoration: none;
+}
+.footer ul .mailto:visited {
+  text-decoration: none;
+}
+
+body {
+  max-width: 768px;
+}
+
 /*presentation*/
 .presentation {
   background-color: rgb(248, 248, 248);
