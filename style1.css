@@ -1,4 +1,13 @@
 @charset "UTF-8";
+/*ex
+.proj-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  @include mobile{
+      grid-template-columns: 1fr;
+  }
+}
+*/
 body {
   font-family: "Roboto", sans-serif;
   width: 1400px;
@@ -8,7 +17,7 @@ p {
   font-family: "shrikhand", cursive;
 }
 
-/* HEADER */
+/* header */
 body {
   max-width: 768px;
 }
@@ -231,6 +240,35 @@ h4 {
   width: 300px;
 }
 
+#fa_solid {
+  margin-left: 320px;
+  font-size: 50px;
+  margin-top: 35px;
+  position: absolute;
+  width: 10%;
+  opacity: 0;
+  cursor: pointer;
+  transition: all 250ms;
+}
+#fa_solid:active {
+  opacity: 1;
+  background-image: linear-gradient(#9356DC, #FF79DA);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+#fa_regular {
+  position: absolute;
+  width: 10%;
+  margin-left: 320px;
+  font-size: 50px;
+  margin-top: 35px;
+}
+#fa_regular:active {
+  display: none;
+}
+
 /* footer */
 .footer {
   height: 360px;
@@ -264,6 +302,229 @@ li {
   padding-left: 20px;
 }
 
+/* header */
+body {
+  max-width: 768px;
+}
+
+.logohead {
+  width: 95%;
+  margin-top: 6%;
+  margin-bottom: 3%;
+  text-align: center;
+}
+
+#logo1 {
+  width: 50%;
+}
+
+/*presentation*/
+.presentation {
+  background-color: rgb(248, 248, 248);
+  height: 680px;
+}
+
+.recherche {
+  font-size: 30px;
+  height: 90px;
+  width: 100%;
+  background-color: rgb(235, 235, 235);
+  display: flex;
+  justify-content: start;
+  box-shadow: 0px -3px 5px rgb(200, 200, 200);
+}
+
+.icone_rech {
+  padding-right: 4%;
+  padding-top: 25px;
+  padding-left: 187px;
+}
+
+.texte_rech {
+  padding-top: 25px;
+}
+
+h1 {
+  font-size: 52px;
+  text-align: center;
+  width: 75%;
+  padding-left: 80px;
+  padding-top: 35px;
+}
+
+h2 {
+  font-size: 35px;
+  font-weight: 100;
+  text-align: center;
+  width: 79%;
+  padding-left: 75px;
+}
+
+.btn {
+  font-size: 28px;
+  width: 420px;
+  height: 90px;
+  background: linear-gradient(#FF79DA, #9356DC);
+  color: white;
+  border: transparent;
+  border-radius: 50px;
+  box-shadow: 3px 3px 20px gray;
+  margin-left: 170px;
+  transition: all 100ms;
+  margin-top: 35px;
+}
+.btn:hover {
+  background: linear-gradient(#ff96e1, #a070db);
+  box-shadow: 10px 10px 20px rgb(128, 128, 128);
+}
+
+/* fonctionnement */
+.fonctionnement {
+  height: 750px;
+}
+
+h3 {
+  font-size: 52px;
+  margin-left: 40px;
+  margin-top: 100px;
+}
+
+.fonction {
+  display: flex;
+  font-size: 30px;
+  width: 86%;
+  height: 150px;
+  margin-top: 50px;
+  margin-left: 60px;
+  background-color: rgb(248, 248, 248);
+  border-radius: 60px;
+  box-shadow: 3px 3px 20px rgb(200, 200, 200);
+}
+
+.fonction:hover {
+  background-color: #f4ecfd;
+  box-shadow: 6px 6px 20px;
+}
+
+.iconechiffre {
+  position: absolute;
+  font-size: 26px;
+  width: 40px;
+  height: 40px;
+  color: white;
+  background-color: #9356DC;
+  margin-top: 107px;
+  margin-left: 40px;
+  border-radius: 30px;
+}
+
+.iconechiffre1 {
+  margin-top: 57px;
+}
+
+.chiffre {
+  padding-left: 12px;
+  padding-top: 4px;
+}
+
+.iconefonct {
+  margin-top: 9%;
+  margin-left: 60px;
+}
+
+.textefonct {
+  margin-top: 9%;
+  padding-left: 40px;
+}
+
+/* carte */
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #000000;
+}
+
+h4 {
+  font-size: 52px;
+  padding-top: 90px;
+  padding-left: 40px;
+}
+
+.restaurants {
+  width: 100%;
+  height: 2630px;
+  background-color: rgb(248, 248, 248);
+}
+
+.cartes {
+  display: flex;
+  width: 100%;
+  height: 2340px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.bloc {
+  width: 90%;
+  height: 540px;
+  border-radius: 30px;
+  background-color: white;
+}
+
+.photobloc {
+  width: 100%;
+  height: 75%;
+  overflow: hidden;
+  border-radius: 30px 30px 0 0;
+  z-index: 1;
+}
+
+#lapalette, #lanote, #lafrance, #ledelice {
+  width: 100%;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.nouveau {
+  background-color: #99E2D0;
+  color: #0d9875;
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 50px;
+  text-align: center;
+  width: 144px;
+  height: 50px;
+  margin-top: 30px;
+  margin-left: 525px;
+  position: absolute;
+  z-index: 2;
+}
+
+.corpsbloc {
+  display: flex;
+  font-size: 30px;
+}
+
+.nombloc {
+  width: 250px;
+  margin-top: 20px;
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+.lieubloc {
+  position: absolute;
+  margin-top: 70px;
+  margin-left: 20px;
+  width: 300px;
+}
+
 #fa_solid {
   margin-left: 320px;
   font-size: 50px;
@@ -293,14 +554,37 @@ li {
   display: none;
 }
 
-/*ex
-.proj-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  @include mobile{
-      grid-template-columns: 1fr;
-  }
+/* footer */
+.footer {
+  height: 360px;
+  background-color: rgb(60, 60, 60);
 }
-*/
+
+.logofoot {
+  padding-left: 40px;
+  padding-top: 50px;
+}
+
+#logo2 {
+  filter: invert(100%);
+}
+
+ul {
+  font-size: 30px;
+  list-style-type: none;
+}
+
+li {
+  padding-bottom: 12px;
+  color: white;
+}
+
+.proposer {
+  padding-left: 30px;
+}
+
+.devenir {
+  padding-left: 20px;
+}
 
 /*# sourceMappingURL=style1.css.map */
