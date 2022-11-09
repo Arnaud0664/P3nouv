@@ -17,3 +17,30 @@
 }
 
 
+$breakpoints: (
+    tablette: 992px,
+    desktop: 1400px,
+);
+
+
+
+@mixin tablette {
+    @media screen and (max-width: map-get($breakpoints, tablette)) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media screen and (max-width: map-get($breakpoints, desktop)) {
+        @content;
+    }
+}
+/*ex
+.proj-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  @include mobile{
+      grid-template-columns: 1fr;
+  }
+}
+*/
