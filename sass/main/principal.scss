@@ -25,14 +25,34 @@ Boucles = automatisent les tâches répétitives, ex la création d’une série
 }
 
 .photomenu {
-    border: 3px solid red;
     width: 100%;
     height:520px;
     overflow: hidden;
 }
 
+.menu {                                                     /*ajouter un contener, mettre le height en % pour le responsive*/
+    width: 99.20%;
+    height: 400%;
+    margin-top: -80px;
+    border-radius: 50px 50px 0 0;
+    border: 3px solid black;
+    background-color: $fond;
+    position: relative;
+
+    &_titre {
+        font-size: $titre;
+        padding-left: 30px;
+        padding-top: 60px;
+    }
+
+    .fa-regular {
+        padding-left: 50px;
+    }
+}
+
+
 .menu_btn {
-    @include button
+    @include button;
 }
 
 
