@@ -41,8 +41,8 @@
         padding-left: 75px;
     }
 
-    .btn {
-        @include bouton;
+    .home_btn {
+        @include button;
         margin-top: 35px;
     }
 }

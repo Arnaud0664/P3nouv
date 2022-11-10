@@ -1,7 +1,7 @@
 
-@import "./../utils/var";
-@import "./../utils/fonct";
-@import "./../utils/mix";
+@import "./../utils/variable";
+@import "./../utils/function";
+@import "./../utils/mixin";
 @import "./../base/typography";
 @import "./../components/components";
 @import "./../layout/layout";
@@ -31,6 +31,9 @@ Boucles = automatisent les tâches répétitives, ex la création d’une série
     overflow: hidden;
 }
 
+.menu_btn {
+    @include button
+}
 
 
 

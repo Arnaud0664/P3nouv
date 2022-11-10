@@ -114,7 +114,7 @@ p {
   width: 79%;
   padding-left: 75px;
 }
-.presentation .btn {
+.presentation .home_btn {
   font-size: 28px;
   width: 420px;
   height: 90px;
@@ -127,7 +127,7 @@ p {
   transition: all 100ms;
   margin-top: 35px;
 }
-.presentation .btn:hover {
+.presentation .home_btn:hover {
   background: linear-gradient(#ff96e1, #a070db);
   box-shadow: 10px 10px 20px rgb(128, 128, 128);
 }
@@ -228,13 +228,6 @@ p {
   border-radius: 30px 30px 0 0;
   z-index: 1;
 }
-.restaurants .cartes .bloc #lapalette, .restaurants .cartes .bloc #lanote, .restaurants .cartes .bloc #lafrance, .restaurants .cartes .bloc #ledelice {
-  width: 100%;
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
 .restaurants .cartes .bloc .corps {
   display: flex;
   font-size: 30px;
@@ -298,6 +291,23 @@ Boucles = automatisent les tâches répétitives, ex la création d’une série
   width: 100%;
   height: 520px;
   overflow: hidden;
+}
+
+.menu_btn {
+  font-size: 28px;
+  width: 420px;
+  height: 90px;
+  background: linear-gradient(#FF79DA, #9356DC);
+  color: white;
+  border: transparent;
+  border-radius: 50px;
+  box-shadow: 3px 3px 20px gray;
+  margin-left: 170px;
+  transition: all 100ms;
+}
+.menu_btn:hover {
+  background: linear-gradient(#ff96e1, #a070db);
+  box-shadow: 10px 10px 20px rgb(128, 128, 128);
 }
 
 /*# sourceMappingURL=style1.css.map */
