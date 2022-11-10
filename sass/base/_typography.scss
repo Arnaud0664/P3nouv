@@ -4,6 +4,16 @@ body {
      max-width: 768px;
 }
 
+a {
+    text-decoration: none;
+    color: #000000;
+
+    &:visited {
+        text-decoration: none;
+        color: #000000;
+    }
+}
+
 p {
     font-family: 'shrikhand', cursive;
 }

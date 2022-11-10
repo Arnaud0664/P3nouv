@@ -138,16 +138,6 @@
             border-radius: 30px;
             background-color: white;
         
-            a {
-                text-decoration: none;
-                color: #000000;
-
-                &:visited {
-                    text-decoration: none;
-                    color: #000000;
-                }
-            }
-
             &_nouveau {
                 background-color: $vert;
                 color: #0d9875;

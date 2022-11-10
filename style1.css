@@ -10,15 +10,11 @@
 */
 body {
   font-family: "Roboto", sans-serif;
-  width: 1400px;
+  max-width: 768px;
 }
 
 p {
   font-family: "shrikhand", cursive;
-}
-
-body {
-  max-width: 768px;
 }
 
 /* header */
@@ -63,10 +59,6 @@ body {
 }
 .footer ul .mailto:visited {
   text-decoration: none;
-}
-
-body {
-  max-width: 768px;
 }
 
 /*presentation*/
@@ -276,6 +268,20 @@ body {
 }
 .restaurants .cartes .bloc .corps #fa_regular:active {
   display: none;
+}
+
+/*Variables = Les variables permettent de stocker des valeurs répétées fréquemment
+Mixins : variables qui stockent des blocs de code (sélecteurs + valeurs)
+Fonctions = outils SASS, bouts de code préfabriqués qui effectuent des tâches de modification
+Condition = mixin modulable, qui modifie les valeurs sous certaine conditions
+Liste = variable avec une liste de plusieurs valeur
+Maps = variable avec une liste de valeurs, mais chaque valeur est reliée à une clé ou un nom
+Boucles = automatisent les tâches répétitives, ex la création d’une série de modificateurs de couleurs*/
+#arrow {
+  position: absolute;
+  font-size: 40px;
+  padding-top: 10px;
+  padding-left: 40px;
 }
 
 /*# sourceMappingURL=style1.css.map */
