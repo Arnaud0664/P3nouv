@@ -6,3 +6,30 @@
     left: 50%; 
     transform: translate(-50%, -50%);
 }
+
+#fa_solid {
+    font-size: 50px;
+    position: absolute;
+    width: 10%; 
+    opacity: 0;
+    cursor: pointer;
+    transition: all 250ms;
+   
+    &:active {
+        opacity: 1;
+        background-image: linear-gradient($violet, $rose);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+    } 
+}
+
+#fa_regular {
+    position: absolute;
+    width: 10%;
+    font-size: 50px;
+    
+    &:active {
+        display: none;
+    }
+}

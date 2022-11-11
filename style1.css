@@ -34,6 +34,31 @@ a:visited {
   transform: translate(-50%, -50%);
 }
 
+#fa_solid {
+  font-size: 50px;
+  position: absolute;
+  width: 10%;
+  opacity: 0;
+  cursor: pointer;
+  transition: all 250ms;
+}
+#fa_solid:active {
+  opacity: 1;
+  background-image: linear-gradient(#9356DC, #FF79DA);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+#fa_regular {
+  position: absolute;
+  width: 10%;
+  font-size: 50px;
+}
+#fa_regular:active {
+  display: none;
+}
+
 /* header */
 .logohead {
   width: 95%;
@@ -246,30 +271,11 @@ a:visited {
 }
 .restaurants .cartes .bloc .corps #fa_solid {
   margin-left: 320px;
-  font-size: 50px;
   margin-top: 35px;
-  position: absolute;
-  width: 10%;
-  opacity: 0;
-  cursor: pointer;
-  transition: all 250ms;
-}
-.restaurants .cartes .bloc .corps #fa_solid:active {
-  opacity: 1;
-  background-image: linear-gradient(#9356DC, #FF79DA);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
 }
 .restaurants .cartes .bloc .corps #fa_regular {
-  position: absolute;
-  width: 10%;
   margin-left: 320px;
-  font-size: 50px;
   margin-top: 35px;
-}
-.restaurants .cartes .bloc .corps #fa_regular:active {
-  display: none;
 }
 
 /*Variables = Les variables permettent de stocker des valeurs répétées fréquemment
@@ -292,10 +298,10 @@ Boucles = automatisent les tâches répétitives, ex la création d’une série
   overflow: hidden;
 }
 
-.menu { /*ajouter un contener */
+.menu {
   width: 99.2%;
-  height: 400%;
-  margin-top: -80px;
+  height: 1500px;
+  margin-top: -8%;
   border-radius: 50px 50px 0 0;
   border: 3px solid black;
   background-color: rgb(248, 248, 248);
@@ -306,8 +312,13 @@ Boucles = automatisent les tâches répétitives, ex la création d’une série
   padding-left: 30px;
   padding-top: 60px;
 }
-.menu .fa-regular {
-  padding-left: 50px;
+.menu #fa_regular {
+  padding-left: 57px;
+  padding-top: 10px;
+}
+.menu #fa_solid {
+  padding-left: 57px;
+  padding-top: 10px;
 }
 
 .menu_btn {
