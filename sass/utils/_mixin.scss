@@ -9,6 +9,7 @@
     border: transparent;
     border-radius: 50px;
     box-shadow: 3px 3px 20px gray;
+    cursor: pointer;
     transition: all 100ms;
     &:hover {
         background: linear-gradient($roselight, $violetlight);

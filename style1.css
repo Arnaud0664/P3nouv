@@ -153,6 +153,7 @@ a:visited {
   border: transparent;
   border-radius: 50px;
   box-shadow: 3px 3px 20px gray;
+  cursor: pointer;
   transition: all 100ms;
 }
 .presentation .home_btn:hover {
@@ -288,6 +289,8 @@ Condition = mixin modulable, qui modifie les valeurs sous certaine conditions
 Liste = variable avec une liste de plusieurs valeur
 Maps = variable avec une liste de valeurs, mais chaque valeur est reliée à une clé ou un nom
 Boucles = automatisent les tâches répétitives, ex la création d’une série de modificateurs de couleurs*/
+/*ala française meal1*/
+/* le delice meal1*/
 #arrow {
   position: absolute;
   font-size: 300%;
@@ -299,6 +302,10 @@ Boucles = automatisent les tâches répétitives, ex la création d’une série
   width: 100%;
   height: 520px;
   overflow: hidden;
+}
+
+#menu2 {
+  height: 2030px;
 }
 
 .menu {
@@ -366,6 +373,7 @@ Boucles = automatisent les tâches répétitives, ex la création d’une série
   border: transparent;
   border-radius: 50px;
   box-shadow: 3px 3px 20px gray;
+  cursor: pointer;
   transition: all 100ms;
   margin-left: 19%;
 }
