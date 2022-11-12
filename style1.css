@@ -11,6 +11,7 @@
 body {
   font-family: "Roboto", sans-serif;
   max-width: 768px;
+  cursor: pointer;
 }
 
 a {
@@ -39,7 +40,6 @@ a:visited {
   position: absolute;
   width: 10%;
   opacity: 0;
-  cursor: pointer;
   transition: all 250ms;
 }
 #fa_solid:active {
@@ -153,7 +153,6 @@ a:visited {
   border: transparent;
   border-radius: 50px;
   box-shadow: 3px 3px 20px gray;
-  cursor: pointer;
   transition: all 100ms;
 }
 .presentation .home_btn:hover {
@@ -304,7 +303,7 @@ Boucles = automatisent les tâches répétitives, ex la création d’une série
 
 .menu {
   width: 95.7%;
-  height: 2500px;
+  height: 1900px;
   margin-top: -8%;
   padding-left: 30px;
   font-size: 30px;
@@ -340,6 +339,23 @@ Boucles = automatisent les tâches répétitives, ex la création d’une série
   border-radius: 25px;
   background-color: white;
 }
+.menu .plats_description {
+  font-weight: bold;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.menu .plats_box {
+  display: flex;
+  justify-content: space-between;
+}
+.menu .plats_description2 {
+  font-size: 23px;
+}
+.menu .plats_prix {
+  font-size: 23px;
+  font-weight: bold;
+  padding-right: 40px;
+}
 .menu .menu_btn {
   font-size: 28px;
   width: 420px;
@@ -350,7 +366,6 @@ Boucles = automatisent les tâches répétitives, ex la création d’une série
   border: transparent;
   border-radius: 50px;
   box-shadow: 3px 3px 20px gray;
-  cursor: pointer;
   transition: all 100ms;
   margin-left: 19%;
 }

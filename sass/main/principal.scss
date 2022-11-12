@@ -32,7 +32,7 @@ Boucles = automatisent les tâches répétitives, ex la création d’une série
 
 .menu {                                                     
     width: 95.7%;
-    height: 2500px;
+    height: 1900px;
     margin-top: -8%;
     padding-left: 30px;
     font-size: $texte;
@@ -71,16 +71,35 @@ Boucles = automatisent les tâches répétitives, ex la création d’une série
         padding-left: 20px;
         border: 3px solid black;
         border-radius: 25px;
-        background-color: white
+        background-color: white;
 
+        &_description {
+            font-weight: bold;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        &_box {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+
+        &_description2 {
+            font-size: 23px;
+        }
+
+        &_prix {
+            font-size: 23px;
+            font-weight: bold;
+            padding-right: 40px;
+        }
     }
-
-
-
-
+    
     .menu_btn {
         @include button;
         margin-left: 19%;
+        
     }
 }
 
