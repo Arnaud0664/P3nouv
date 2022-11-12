@@ -139,18 +139,22 @@ a:visited {
   width: 79%;
   padding-left: 75px;
 }
+.presentation .button {
+  display: flex;
+  justify-content: center;
+}
 .presentation .home_btn {
   font-size: 28px;
   width: 420px;
   height: 90px;
+  margin-top: 40px;
   background: linear-gradient(#FF79DA, #9356DC);
   color: white;
   border: transparent;
   border-radius: 50px;
   box-shadow: 3px 3px 20px gray;
-  margin-left: 170px;
+  cursor: pointer;
   transition: all 100ms;
-  margin-top: 35px;
 }
 .presentation .home_btn:hover {
   background: linear-gradient(#ff96e1, #a070db);
@@ -328,7 +332,7 @@ Boucles = automatisent les tâches répétitives, ex la création d’une série
   margin-top: 60px;
 }
 .menu .plats {
-  width: 90%;
+  width: 92%;
   height: 100px;
   margin-bottom: 30px;
   padding-left: 20px;
@@ -340,13 +344,15 @@ Boucles = automatisent les tâches répétitives, ex la création d’une série
   font-size: 28px;
   width: 420px;
   height: 90px;
+  margin-top: 40px;
   background: linear-gradient(#FF79DA, #9356DC);
   color: white;
   border: transparent;
   border-radius: 50px;
   box-shadow: 3px 3px 20px gray;
-  margin-left: 170px;
+  cursor: pointer;
   transition: all 100ms;
+  margin-left: 19%;
 }
 .menu .menu_btn:hover {
   background: linear-gradient(#ff96e1, #a070db);

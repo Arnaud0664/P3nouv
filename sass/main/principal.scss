@@ -65,7 +65,7 @@ Boucles = automatisent les tâches répétitives, ex la création d’une série
     }
 
     .plats {
-        width: 90%;
+        width: 92%;
         height: 100px;
         margin-bottom: 30px;
         padding-left: 20px;
@@ -78,13 +78,9 @@ Boucles = automatisent les tâches répétitives, ex la création d’une série
 
 
 
-
-
-
-
-
     .menu_btn {
         @include button;
+        margin-left: 19%;
     }
 }
 

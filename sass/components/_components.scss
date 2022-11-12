@@ -12,7 +12,6 @@
     position: absolute;
     width: 10%; 
     opacity: 0;
-    cursor: pointer;
     transition: all 250ms;
    
     &:active {
@@ -33,3 +32,4 @@
         display: none;
     }
 }
+

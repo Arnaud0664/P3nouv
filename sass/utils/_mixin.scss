@@ -3,12 +3,12 @@
     font-size: 28px;
     width: 420px;
     height: 90px;
+    margin-top: 40px;
     background: linear-gradient($rose, $violet);
     color: white;
     border: transparent;
     border-radius: 50px;
     box-shadow: 3px 3px 20px gray;
-    margin-left: 170px;
     transition: all 100ms;
     &:hover {
         background: linear-gradient($roselight, $violetlight);
