@@ -107,7 +107,7 @@ a:visited {
 .presentation {
   background-color: rgb(248, 248, 248);
   width: 100%;
-  height: 680px;
+  box-sizing: border-box;
 }
 .presentation .recherche {
   font-size: 30px;
@@ -153,6 +153,7 @@ a:visited {
   box-shadow: 3px 3px 20px gray;
   cursor: pointer;
   transition: all 100ms;
+  margin-bottom: 50px;
 }
 .presentation .home_btn:hover {
   background: linear-gradient(#ff96e1, #a070db);
@@ -172,7 +173,7 @@ a:visited {
 .fonctionnement .iconechiffre {
   position: absolute;
   font-size: 26px;
-  width: 5.5%;
+  width: 40px;
   height: 40px;
   color: white;
   background-color: #9356DC;
@@ -193,7 +194,8 @@ a:visited {
   width: 86%;
   height: 150px;
   margin-top: 50px;
-  margin-left: 60px;
+  margin-left: 9%;
+  align-items: center;
   background-color: rgb(248, 248, 248);
   border-radius: 60px;
   box-shadow: 3px 3px 20px rgb(200, 200, 200);
@@ -203,12 +205,10 @@ a:visited {
   box-shadow: 6px 6px 20px;
 }
 .fonctionnement .fonction_icone {
-  margin-top: 9%;
-  margin-left: 60px;
+  margin-left: 13%;
 }
 .fonctionnement .fonction_texte {
-  margin-top: 9%;
-  padding-left: 40px;
+  padding-left: 5%;
 }
 
 /* restaurants */
@@ -242,10 +242,10 @@ a:visited {
   font-weight: bold;
   line-height: 50px;
   text-align: center;
-  width: 144px;
+  width: 16%;
   height: 50px;
   margin-top: 30px;
-  margin-left: 525px;
+  margin-left: 62%;
   position: absolute;
   z-index: 2;
 }
@@ -273,11 +273,11 @@ a:visited {
   width: 300px;
 }
 .restaurants .cartes .bloc .corps #fa_solid {
-  margin-left: 320px;
+  margin-left: 35%;
   margin-top: 35px;
 }
 .restaurants .cartes .bloc .corps #fa_regular {
-  margin-left: 320px;
+  margin-left: 35%;
   margin-top: 35px;
 }
 
