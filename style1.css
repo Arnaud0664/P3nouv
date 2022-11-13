@@ -37,7 +37,6 @@ a:visited {
 
 #fa_solid {
   font-size: 50px;
-  position: absolute;
   width: 10%;
   opacity: 0;
   transition: all 250ms;
@@ -51,7 +50,6 @@ a:visited {
 }
 
 #fa_regular {
-  position: absolute;
   width: 10%;
   font-size: 50px;
 }
@@ -106,7 +104,6 @@ a:visited {
 /*presentation*/
 .presentation {
   background-color: rgb(248, 248, 248);
-  width: 100%;
   box-sizing: border-box;
 }
 .presentation .recherche {
@@ -238,13 +235,13 @@ a:visited {
 .restaurants .cartes .bloc_nouveau {
   background-color: #99E2D0;
   color: #0d9875;
-  font-size: 25px;
+  font-size: 130%;
   font-weight: bold;
   line-height: 50px;
   text-align: center;
   width: 16%;
   height: 50px;
-  margin-top: 30px;
+  margin-top: 3%;
   margin-left: 62%;
   position: absolute;
   z-index: 2;
@@ -262,23 +259,22 @@ a:visited {
 }
 .restaurants .cartes .bloc .corps_nom {
   width: 250px;
-  margin-top: 20px;
-  margin-left: 20px;
+  margin-top: 0px;
+  margin-left: 0px;
   font-weight: bold;
 }
-.restaurants .cartes .bloc .corps_lieu {
-  position: absolute;
-  margin-top: 70px;
-  margin-left: 20px;
-  width: 300px;
-}
 .restaurants .cartes .bloc .corps #fa_solid {
-  margin-left: 35%;
-  margin-top: 35px;
+  margin-left: 0px;
+  margin-top: 0px;
 }
 .restaurants .cartes .bloc .corps #fa_regular {
-  margin-left: 35%;
-  margin-top: 35px;
+  margin-left: 0px;
+  margin-top: 0px;
+}
+.restaurants .cartes .bloc .lieu {
+  width: 300px;
+  margin-top: 0px;
+  margin-left: 0px;
 }
 
 /*Variables = Les variables permettent de stocker des valeurs répétées fréquemment

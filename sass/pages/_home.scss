@@ -168,28 +168,28 @@
             
                 &_nom {
                     width: 250px;
-                    margin-top: 20px;
-                    margin-left: 20px;
+                    margin-top: 0px;
+                    margin-left: 0px;
                     font-weight: bold;
                 }
 
-                &_lieu {
-                    position: absolute;
-                    margin-top: 70px;
-                    margin-left: 20px;
-                    width: 300px;
-                }
-
                 #fa_solid {
-                    margin-left: 35%;
-                    margin-top: 35px;
+                    margin-left: 0px;
+                    margin-top: 0px;
                 }
 
                 #fa_regular {
-                    margin-left: 35%;
-                    margin-top: 35px;
+                    margin-left: 0px;
+                    margin-top: 0px;
                 } 
-            }  
+            }
+            
+            .lieu {
+                width: 300px;
+                margin-top: 0px;
+                margin-left: 0px;
+                
+            }
         }    
     }
 }    
