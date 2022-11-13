@@ -256,12 +256,18 @@ a:visited {
 .restaurants .cartes .bloc .corps {
   display: flex;
   font-size: 1.9rem;
+  padding-top: 3%;
+  height: 10%;
+  justify-content: space-between;
 }
 .restaurants .cartes .bloc .corps_nom {
   width: 250px;
   margin-top: 0px;
   margin-left: 0px;
   font-weight: bold;
+}
+.restaurants .cartes .bloc .corps_coeur {
+  padding-right: 10%;
 }
 .restaurants .cartes .bloc .corps #fa_solid {
   margin-left: 0px;
