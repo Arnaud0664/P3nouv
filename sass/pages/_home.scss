@@ -125,6 +125,7 @@
         padding-top: 90px;
         padding-left: 40px;
     }
+
     .cartes {
         display: flex;
         width: 100%;
@@ -132,27 +133,28 @@
         flex-wrap: wrap;
         justify-content: space-evenly;
     
+        .nouveau {
+            background-color: $vert;
+            color: #0d9875;
+            font-size: 130%;
+            font-weight: bold;
+            line-height: 50px;
+            text-align: center;
+            width: 16%;
+            height: 50px;
+            margin-top: 5%;
+            margin-left: 66%;
+            position: absolute;
+            z-index: 2;
+            border-radius: 3px;
+            overflow: hidden;
+        }
 
         .bloc {
             width: 90%;
             height: 540px;
             border-radius: 30px;
             background-color: white;
-
-            &_nouveau {
-                background-color: $vert;
-                color: #0d9875;
-                font-size: 130%;
-                font-weight: bold;
-                line-height: 50px;
-                text-align: center;
-                width: 16%;
-                height: 50px;
-                margin-top: 3%;
-                margin-left: 62%;
-                position: absolute;
-                z-index: 2;
-            }
 
             &_photo {
                 width: 100%;
@@ -165,12 +167,19 @@
             .corps {
                 display: flex;
                 font-size: $texte;
+                padding-top: 3%;
+                height: 10%;
+                justify-content: space-between;
             
                 &_nom {
                     width: 250px;
                     margin-top: 0px;
                     margin-left: 0px;
                     font-weight: bold;
+                }
+                
+                &_coeur {
+                    padding-right: 10%;
                 }
 
                 #fa_solid {
