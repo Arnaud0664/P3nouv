@@ -33,7 +33,7 @@
         font-size: 35px;
         font-weight: 100;
         text-align: center;
-        width: 79%;
+        width: 82%;
         padding-left: 8%;
     }
 
@@ -57,8 +57,9 @@
 
     h3 {
         font-size: $titre;
-        margin-left: 5%;
-        margin-top: 100px;
+        padding-left: 5%;
+        padding-top: 100px;
+        word-wrap: break-word;
     }
 
     .iconechiffre {
@@ -124,6 +125,7 @@
         font-size: $titre;
         padding-top: 90px;
         padding-left: 40px;
+        word-wrap: break-word;
     }
 
     .cartes {
@@ -168,22 +170,22 @@
                 display: flex;
                 font-size: $texte;
                 padding-top: 3%;
+                margin-left: 4%;
                 height: 10%;
                 justify-content: space-between;
             
                 &_nom {
-                    width: 250px;
-                    margin-top: 0px;
-                    margin-left: 0px;
                     font-weight: bold;
+                    overflow: hidden;
                 }
                 
                 &_coeur {
-                    padding-right: 10%;
+                    padding-right: 20%;
                 }
 
                 #fa_solid {
-                    margin-left: 0px;
+                    margin-right: 0px;
+                    padding-right: 10px;
                     margin-top: 0px;
                 }
 
@@ -195,8 +197,8 @@
             
             .lieu {
                 width: 300px;
-                margin-top: 0px;
-                margin-left: 0px;
+                font-size: $texte;
+                margin-left: 4%;
                 
             }
         }    
