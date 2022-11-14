@@ -24,9 +24,9 @@ Boucles = automatisent les tâches répétitives, ex la création d’une série
 
 #arrow {
     position: absolute;
-    font-size: 300%;
-    padding-top: 1%;
+    font-size: 250%;
     padding-left: 5%;
+    padding-top: 1%;
 }
 
 .photomenu {
@@ -40,7 +40,7 @@ Boucles = automatisent les tâches répétitives, ex la création d’une série
 }
 
 .menu {                                                     
-    width: 95.7%;
+    width: 100%;
     height: 1900px;
     margin-top: -8%;
     padding-left: 30px;
@@ -51,19 +51,20 @@ Boucles = automatisent les tâches répétitives, ex la création d’une série
     position: relative;
 
     &_titre {
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
         font-size: $titre;
         padding-top: 60px;
         
     }
 
     #fa_regular {
-        padding-left: 57px;
-        padding-top: 10px;
+        padding-top: 1%;
     }
 
     #fa_solid {
-        padding-left: 57px;
-        padding-top: 10px;
+        padding-top: 1%;
     }
 
     .intitulé {
@@ -81,6 +82,8 @@ Boucles = automatisent les tâches répétitives, ex la création d’une série
         border: 3px solid black;
         border-radius: 25px;
         background-color: white;
+        text-overflow: ellipsis;
+        white-space: nowrap;
 
         &_description {
             font-weight: bold;
@@ -108,6 +111,7 @@ Boucles = automatisent les tâches répétitives, ex la création d’une série
     .menu_btn {
         @include button;
         margin-left: 19%;
+        width: 56%;
         
     }
 }

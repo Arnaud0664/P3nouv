@@ -140,7 +140,6 @@ a:visited {
 }
 .presentation .home_btn {
   font-size: 28px;
-  width: 104%;
   height: 90px;
   margin-top: 40px;
   background: linear-gradient(#FF79DA, #9356DC);
@@ -150,6 +149,7 @@ a:visited {
   box-shadow: 3px 3px 20px gray;
   cursor: pointer;
   transition: all 100ms;
+  width: 104%;
   margin-bottom: 50px;
 }
 .presentation .home_btn:hover {
@@ -273,13 +273,7 @@ a:visited {
   padding-right: 20%;
 }
 .restaurants .cartes .bloc .corps #fa_solid {
-  margin-right: 0px;
   padding-right: 10px;
-  margin-top: 0px;
-}
-.restaurants .cartes .bloc .corps #fa_regular {
-  margin-left: 0px;
-  margin-top: 0px;
 }
 .restaurants .cartes .bloc .lieu {
   width: 300px;
@@ -298,9 +292,9 @@ Boucles = automatisent les tâches répétitives, ex la création d’une série
 /* le delice meal1*/
 #arrow {
   position: absolute;
-  font-size: 300%;
-  padding-top: 1%;
+  font-size: 250%;
   padding-left: 5%;
+  padding-top: 1%;
 }
 
 .photomenu {
@@ -314,7 +308,7 @@ Boucles = automatisent les tâches répétitives, ex la création d’une série
 }
 
 .menu {
-  width: 95.7%;
+  width: 100%;
   height: 1900px;
   margin-top: -8%;
   padding-left: 30px;
@@ -325,16 +319,17 @@ Boucles = automatisent les tâches répétitives, ex la création d’une série
   position: relative;
 }
 .menu_titre {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
   font-size: 3.2rem;
   padding-top: 60px;
 }
 .menu #fa_regular {
-  padding-left: 57px;
-  padding-top: 10px;
+  padding-top: 1%;
 }
 .menu #fa_solid {
-  padding-left: 57px;
-  padding-top: 10px;
+  padding-top: 1%;
 }
 .menu .intitulé {
   width: 60px;
@@ -350,6 +345,8 @@ Boucles = automatisent les tâches répétitives, ex la création d’une série
   border: 3px solid black;
   border-radius: 25px;
   background-color: white;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .menu .plats_description {
   font-weight: bold;
@@ -370,7 +367,6 @@ Boucles = automatisent les tâches répétitives, ex la création d’une série
 }
 .menu .menu_btn {
   font-size: 28px;
-  width: 104%;
   height: 90px;
   margin-top: 40px;
   background: linear-gradient(#FF79DA, #9356DC);
@@ -381,6 +377,7 @@ Boucles = automatisent les tâches répétitives, ex la création d’une série
   cursor: pointer;
   transition: all 100ms;
   margin-left: 19%;
+  width: 56%;
 }
 .menu .menu_btn:hover {
   background: linear-gradient(#ff96e1, #a070db);

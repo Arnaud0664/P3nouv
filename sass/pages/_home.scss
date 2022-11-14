@@ -44,6 +44,7 @@
 
     .home_btn {
         @include button;
+        width: 104%;
         margin-bottom: 50px;   
     }
 }
@@ -184,15 +185,8 @@
                 }
 
                 #fa_solid {
-                    margin-right: 0px;
                     padding-right: 10px;
-                    margin-top: 0px;
                 }
-
-                #fa_regular {
-                    margin-left: 0px;
-                    margin-top: 0px;
-                } 
             }
             
             .lieu {
