@@ -21,19 +21,7 @@ Boucles = automatisent les tâches répétitives, ex la création d’une série
 /* le delice meal1*/
 
 
-.logohead2 {
-    display: flex;
-    justify-content: space-evenly;
 
-    .logo2 {
-        padding-right: 16%;
-    }
-
-    #arrow {
-        font-size: 230%;
-        padding-top: 50%;
-    }
-}
 
 .photomenu {
     width: 100%;
@@ -62,11 +50,16 @@ Boucles = automatisent les tâches répétitives, ex la création d’une série
         padding-top: 60px;
         padding-left: 4%;
         
+        .nom {
+            width: 100%;
+        }
+
+        .coeur {
+            padding-top: 2%;
+        }
     }
 
-    .coeur {
-        padding-top: 2%;
-    }
+    
 
     .intitulé {
         width: 60px;
@@ -81,7 +74,6 @@ Boucles = automatisent les tâches répétitives, ex la création d’une série
         height: 100px;
         margin-bottom: 30px;
         margin-left: 3.5%;
-        border: 3px solid black;
         border-radius: 25px;
         background-color: white;
         

@@ -69,6 +69,19 @@ a:visited {
   width: 50%;
 }
 
+/* header menus */
+.logohead2 {
+  display: flex;
+  justify-content: space-evenly;
+}
+.logohead2 .logo2 {
+  padding-right: 16%;
+}
+.logohead2 #arrow {
+  font-size: 230%;
+  padding-top: 50%;
+}
+
 /* footer */
 .footer {
   width: 100%;
@@ -292,18 +305,6 @@ Maps = variable avec une liste de valeurs, mais chaque valeur est reliée à une
 Boucles = automatisent les tâches répétitives, ex la création d’une série de modificateurs de couleurs*/
 /*ala française meal1*/
 /* le delice meal1*/
-.logohead2 {
-  display: flex;
-  justify-content: space-evenly;
-}
-.logohead2 .logo2 {
-  padding-right: 16%;
-}
-.logohead2 #arrow {
-  font-size: 230%;
-  padding-top: 50%;
-}
-
 .photomenu {
   width: 100%;
   height: 520px;
@@ -331,7 +332,10 @@ Boucles = automatisent les tâches répétitives, ex la création d’une série
   padding-top: 60px;
   padding-left: 4%;
 }
-.menu .coeur {
+.menu_titre .nom {
+  width: 100%;
+}
+.menu_titre .coeur {
   padding-top: 2%;
 }
 .menu .intitulé {
@@ -346,7 +350,6 @@ Boucles = automatisent les tâches répétitives, ex la création d’une série
   height: 100px;
   margin-bottom: 30px;
   margin-left: 3.5%;
-  border: 3px solid black;
   border-radius: 25px;
   background-color: white;
 }

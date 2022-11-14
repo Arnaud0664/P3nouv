@@ -12,6 +12,21 @@
     }
 }
 
+/* header menus */
+.logohead2 {
+    display: flex;
+    justify-content: space-evenly;
+
+    .logo2 {
+        padding-right: 16%;
+    }
+
+    #arrow {
+        font-size: 230%;
+        padding-top: 50%;
+    }
+}
+
 
 /* footer */
 .footer {
