@@ -59,17 +59,19 @@ a:visited {
 
 /* header */
 .logohead {
-  width: 95%;
+  display: flex;
+  justify-content: center;
+  width: 100%;
   margin-top: 6%;
   margin-bottom: 3%;
-  text-align: center;
 }
-.logohead #logo1 {
+.logohead .logo1 {
   width: 50%;
 }
 
 /* footer */
 .footer {
+  width: 100%;
   height: 380px;
   background-color: rgb(60, 60, 60);
 }
@@ -290,11 +292,16 @@ Maps = variable avec une liste de valeurs, mais chaque valeur est reliée à une
 Boucles = automatisent les tâches répétitives, ex la création d’une série de modificateurs de couleurs*/
 /*ala française meal1*/
 /* le delice meal1*/
-#arrow {
-  position: absolute;
-  font-size: 250%;
-  padding-left: 5%;
-  padding-top: 1%;
+.logohead2 {
+  display: flex;
+  justify-content: space-evenly;
+}
+.logohead2 .logo2 {
+  padding-right: 16%;
+}
+.logohead2 #arrow {
+  font-size: 230%;
+  padding-top: 50%;
 }
 
 .photomenu {
@@ -309,63 +316,73 @@ Boucles = automatisent les tâches répétitives, ex la création d’une série
 
 .menu {
   width: 100%;
-  height: 1900px;
+  box-sizing: border-box;
   margin-top: -8%;
-  padding-left: 30px;
   font-size: 1.9rem;
   border-radius: 50px 50px 0 0;
-  border: 3px solid black;
   background-color: rgb(248, 248, 248);
   position: relative;
 }
 .menu_titre {
   display: flex;
   justify-content: space-between;
-  width: 80%;
+  width: 75%;
   font-size: 3.2rem;
   padding-top: 60px;
+  padding-left: 4%;
 }
-.menu #fa_regular {
-  padding-top: 1%;
-}
-.menu #fa_solid {
-  padding-top: 1%;
+.menu .coeur {
+  padding-top: 2%;
 }
 .menu .intitulé {
   width: 60px;
   border-bottom: 5px solid #99E2D0;
   margin-bottom: 30px;
   margin-top: 60px;
+  margin-left: 4%;
 }
 .menu .plats {
   width: 92%;
   height: 100px;
   margin-bottom: 30px;
-  padding-left: 20px;
+  margin-left: 3.5%;
   border: 3px solid black;
   border-radius: 25px;
   background-color: white;
-  text-overflow: ellipsis;
-  white-space: nowrap;
 }
 .menu .plats_description {
   font-weight: bold;
   padding-top: 10px;
   padding-bottom: 10px;
+  padding-left: 3%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .menu .plats_box {
   display: flex;
   justify-content: space-between;
+  padding-left: 3%;
 }
 .menu .plats_description2 {
   font-size: 23px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .menu .plats_prix {
   font-size: 23px;
   font-weight: bold;
   padding-right: 40px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
-.menu .menu_btn {
+.menu .button {
+  text-align: center;
+  padding-bottom: 50px;
+}
+.menu_btn {
   font-size: 28px;
   height: 90px;
   margin-top: 40px;
@@ -376,10 +393,9 @@ Boucles = automatisent les tâches répétitives, ex la création d’une série
   box-shadow: 3px 3px 20px gray;
   cursor: pointer;
   transition: all 100ms;
-  margin-left: 19%;
-  width: 56%;
+  width: 58%;
 }
-.menu .menu_btn:hover {
+.menu_btn:hover {
   background: linear-gradient(#ff96e1, #a070db);
   box-shadow: 10px 10px 20px rgb(128, 128, 128);
 }

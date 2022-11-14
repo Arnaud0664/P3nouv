@@ -21,12 +21,18 @@ Boucles = automatisent les tâches répétitives, ex la création d’une série
 /* le delice meal1*/
 
 
+.logohead2 {
+    display: flex;
+    justify-content: space-evenly;
 
-#arrow {
-    position: absolute;
-    font-size: 250%;
-    padding-left: 5%;
-    padding-top: 1%;
+    .logo2 {
+        padding-right: 16%;
+    }
+
+    #arrow {
+        font-size: 230%;
+        padding-top: 50%;
+    }
 }
 
 .photomenu {
@@ -41,30 +47,25 @@ Boucles = automatisent les tâches répétitives, ex la création d’une série
 
 .menu {                                                     
     width: 100%;
-    height: 1900px;
+    box-sizing: border-box;
     margin-top: -8%;
-    padding-left: 30px;
     font-size: $texte;
     border-radius: 50px 50px 0 0;
-    border: 3px solid black;
     background-color: $fond;
     position: relative;
 
     &_titre {
         display: flex;
         justify-content: space-between;
-        width: 80%;
+        width: 75%;
         font-size: $titre;
         padding-top: 60px;
+        padding-left: 4%;
         
     }
 
-    #fa_regular {
-        padding-top: 1%;
-    }
-
-    #fa_solid {
-        padding-top: 1%;
+    .coeur {
+        padding-top: 2%;
     }
 
     .intitulé {
@@ -72,46 +73,55 @@ Boucles = automatisent les tâches répétitives, ex la création d’une série
         border-bottom: 5px solid $vert;
         margin-bottom: 30px;
         margin-top: 60px;
+        margin-left: 4%;
     }
 
     .plats {
         width: 92%;
         height: 100px;
         margin-bottom: 30px;
-        padding-left: 20px;
+        margin-left: 3.5%;
         border: 3px solid black;
         border-radius: 25px;
         background-color: white;
-        text-overflow: ellipsis;
-        white-space: nowrap;
+        
 
         &_description {
             font-weight: bold;
             padding-top: 10px;
             padding-bottom: 10px;
+            padding-left: 3%;
+            @include rognage;
         }
 
         &_box {
             display: flex;
             justify-content: space-between;
+            padding-left: 3%;
         }
         
 
         &_description2 {
             font-size: 23px;
+            @include rognage;
         }
 
         &_prix {
             font-size: 23px;
             font-weight: bold;
             padding-right: 40px;
+            @include rognage;
         }
     }
     
-    .menu_btn {
+    .button {
+        text-align: center;
+        padding-bottom: 50px;
+    }
+
+    &_btn {
         @include button;
-        margin-left: 19%;
-        width: 56%;
+        width: 58%;
         
     }
 }
