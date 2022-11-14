@@ -7,7 +7,7 @@
 
     .recherche {
         font-size: 30px;
-        box-sizing: border-box;
+        width: 85%;
         height: 60px;
         align-items: center;
         background-color: rgb(235, 235, 235);
@@ -17,10 +17,6 @@
     
         &_icone {
             padding-right: 4%;
-        }
-
-        &_texte {
-            padding-right: 15%;
         }
     }
        
