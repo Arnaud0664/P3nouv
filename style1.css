@@ -123,17 +123,19 @@ a:visited {
 }
 .presentation .recherche {
   font-size: 30px;
-  width: 100%;
-  height: 90px;
+  box-sizing: border-box;
+  height: 60px;
   align-items: center;
   background-color: rgb(235, 235, 235);
   display: flex;
-  justify-content: start;
+  justify-content: center;
   box-shadow: 0px -3px 5px rgb(200, 200, 200);
 }
 .presentation .recherche_icone {
   padding-right: 4%;
-  padding-left: 24%;
+}
+.presentation .recherche_texte {
+  padding-right: 15%;
 }
 .presentation h1 {
   font-size: 3.2rem;
@@ -164,7 +166,7 @@ a:visited {
   box-shadow: 3px 3px 20px gray;
   cursor: pointer;
   transition: all 100ms;
-  width: 104%;
+  width: 100%;
   margin-bottom: 50px;
 }
 .presentation .home_btn:hover {
@@ -175,13 +177,14 @@ a:visited {
 /* fonctionnement */
 .fonctionnement {
   width: 100%;
-  height: 750px;
+  box-sizing: border-box;
 }
 .fonctionnement h3 {
   font-size: 3.2rem;
   padding-left: 5%;
   padding-top: 100px;
   word-wrap: break-word;
+  hyphens: auto;
 }
 .fonctionnement .iconechiffre {
   position: absolute;
@@ -235,6 +238,7 @@ a:visited {
   padding-top: 90px;
   padding-left: 40px;
   word-wrap: break-word;
+  hyphens: auto;
 }
 .restaurants .cartes {
   display: flex;
@@ -258,6 +262,8 @@ a:visited {
   z-index: 2;
   border-radius: 3px;
   overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .restaurants .cartes .bloc {
   width: 90%;
@@ -283,6 +289,8 @@ a:visited {
 .restaurants .cartes .bloc .corps_nom {
   font-weight: bold;
   overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .restaurants .cartes .bloc .corps_coeur {
   padding-right: 20%;
@@ -291,28 +299,15 @@ a:visited {
   padding-right: 10px;
 }
 .restaurants .cartes .bloc .lieu {
-  width: 300px;
+  width: 100%;
   font-size: 1.9rem;
   margin-left: 4%;
 }
 
-/*Variables = Les variables permettent de stocker des valeurs répétées fréquemment
-Mixins : variables qui stockent des blocs de code (sélecteurs + valeurs)
-Fonctions = outils SASS, bouts de code préfabriqués qui effectuent des tâches de modification
-Condition = mixin modulable, qui modifie les valeurs sous certaine conditions
-Liste = variable avec une liste de plusieurs valeur
-Maps = variable avec une liste de valeurs, mais chaque valeur est reliée à une clé ou un nom
-Boucles = automatisent les tâches répétitives, ex la création d’une série de modificateurs de couleurs*/
-/*ala française meal1*/
-/* le delice meal1*/
 .photomenu {
   width: 100%;
   height: 520px;
   overflow: hidden;
-}
-
-#menu2 {
-  height: 2030px;
 }
 
 .menu {
@@ -402,5 +397,15 @@ Boucles = automatisent les tâches répétitives, ex la création d’une série
   background: linear-gradient(#ff96e1, #a070db);
   box-shadow: 10px 10px 20px rgb(128, 128, 128);
 }
+
+/*Variables = Les variables permettent de stocker des valeurs répétées fréquemment
+Mixins : variables qui stockent des blocs de code (sélecteurs + valeurs)
+Fonctions = outils SASS, bouts de code préfabriqués qui effectuent des tâches de modification
+Condition = mixin modulable, qui modifie les valeurs sous certaine conditions
+Liste = variable avec une liste de plusieurs valeur
+Maps = variable avec une liste de valeurs, mais chaque valeur est reliée à une clé ou un nom
+Boucles = automatisent les tâches répétitives, ex la création d’une série de modificateurs de couleurs*/
+/*ala française meal1*/
+/* le delice meal1*/
 
 /*# sourceMappingURL=style1.css.map */
