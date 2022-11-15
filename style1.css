@@ -459,5 +459,80 @@ Condition = mixin modulable, qui modifie les valeurs sous certaine conditions
 Liste = variable avec une liste de plusieurs valeur
 Maps = variable avec une liste de valeurs, mais chaque valeur est reliée à une clé ou un nom
 Boucles = automatisent les tâches répétitives, ex la création d’une série de modificateurs de couleurs*/
+@keyframes loader {
+  0% {
+    transform: perspective(800px) rotateY(-180deg);
+  }
+  100% {
+    transform: perspective(800px) rotateY(0deg);
+  }
+}
+@keyframes ustensils {
+  0% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes ohmyfood {
+  0% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.total {
+  display: flex;
+  width: 100%;
+  height: 500px;
+  justify-content: center;
+  align-items: center;
+}
+
+.contour {
+  border: 25px solid black;
+  width: 400px;
+  height: 400px;
+  border-radius: 230px;
+}
+.contour:hover {
+  animation: loader 3s 300ms forwards;
+}
+.contour:hover #ustensils {
+  animation: ustensils 3s 300ms forwards;
+}
+.contour:hover #ohmyfood {
+  animation: ohmyfood 3s 300ms forwards;
+}
+
+.interieur {
+  background-color: black;
+  width: 90%;
+  height: 90%;
+  border-radius: 180px;
+  margin-left: 5%;
+  margin-top: 5%;
+}
+.interieur #ustensils {
+  color: white;
+  font-size: 600%;
+  margin-left: 39%;
+  margin-top: 10%;
+  opacity: 0;
+}
+.interieur #ohmyfood {
+  filter: invert(100%);
+  margin-top: 26%;
+  margin-left: 22%;
+  opacity: 0;
+}
 
 /*# sourceMappingURL=style1.css.map */

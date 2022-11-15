@@ -21,23 +21,101 @@ Boucles = automatisent les tâches répétitives, ex la création d’une série
 
 
 
+@keyframes loader {
+    0% {
+        transform: perspective(800px) rotateY(-180deg)
+    }
+    90% {
 
- 
+    }
+    100% {
+        transform: perspective(800px) rotateY(0deg);
+    }
+}
+
+@keyframes ustensils {
+    0% {
+       opacity: 0;
+        
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes ohmyfood {
+    0% {
+       opacity: 0;
+        
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+       opacity: 1;
+    }
+}
+
+.total {
+    display: flex;
+    width: 100%;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+  }
 
 
+.contour {
+    border: 25px solid black;
+    width: 400px;
+    height: 400px;
+    border-radius: 230px;
 
-
+    &:hover {
+        animation: loader 3s 300ms forwards;
+    }
     
+    &:hover #ustensils {
+        animation: ustensils 3s 300ms forwards;
+    }
 
+    &:hover #ohmyfood {
+        animation: ohmyfood 3s 300ms forwards;
+    }
+   
+  }
+  
+  .interieur {
+    
+    background-color: black;
+    width: 90%;
+    height: 90%;
+    border-radius: 180px;
+    margin-left: 5%;
+    margin-top: 5%;
+   
+    #ustensils {
+        color: white;
+        font-size: 600%;
+        margin-left: 39%;
+        margin-top: 10%; 
+        opacity: 0;
+    }
 
+    #ohmyfood {
+        filter: invert(100%);
+        margin-top: 26%;
+        margin-left: 22%;
+        opacity: 0;
+        
 
-
- 
-
-
-
-
-
+    }
+  }
+  
+  
 
 
 
