@@ -57,6 +57,54 @@ a:visited {
   display: none;
 }
 
+@keyframes coche {
+  0% {
+    transform: translate(115px);
+  }
+  100% {
+    transform: translate(0px);
+  }
+}
+@keyframes check {
+  0% {
+    transform: rotate(-360deg);
+    transform: rotate(0turn);
+  }
+  100% {
+    transform: rotate(0deg);
+    transform: rotate(1turn);
+  }
+}
+.plats:active .coche {
+  animation: coche 400ms;
+  display: block;
+}
+.plats tablette:hover .coche {
+  animation: coche 400ms;
+  display: block;
+}
+.plats:active #check {
+  animation: check 400ms;
+}
+.plats tablette:hover #check {
+  animation: check 400ms;
+}
+
+.coche {
+  display: none;
+  width: 100px;
+  margin-top: -57px;
+  height: 100px;
+  border-radius: 0 25px 25px 0;
+  background-color: #99E2D0;
+}
+.coche #check {
+  color: white;
+  font-size: 150%;
+  margin-top: 25%;
+  margin-left: 25%;
+}
+
 /* header */
 .logohead {
   display: flex;
@@ -401,18 +449,5 @@ Condition = mixin modulable, qui modifie les valeurs sous certaine conditions
 Liste = variable avec une liste de plusieurs valeur
 Maps = variable avec une liste de valeurs, mais chaque valeur est reliée à une clé ou un nom
 Boucles = automatisent les tâches répétitives, ex la création d’une série de modificateurs de couleurs*/
-.coche {
-  width: 16%;
-  margin-top: -57px;
-  height: 100px;
-  border-radius: 0 25px 25px 0;
-  background-color: #99E2D0;
-}
-.coche #check {
-  color: white;
-  font-size: 150%;
-  padding-top: 25%;
-  padding-left: 25%;
-}
 
 /*# sourceMappingURL=style1.css.map */

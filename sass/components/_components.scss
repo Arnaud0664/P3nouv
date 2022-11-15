@@ -32,3 +32,60 @@
     }
 }
 
+@keyframes coche {
+    0% {
+        transform: translate(115px);
+    }
+    100% {
+        transform: translate(0px);
+    }
+}
+
+@keyframes check {
+    0% {
+        transform: rotate(-360deg);
+        transform: rotate(0turn);
+    }
+    100% {
+        transform: rotate(0deg);
+        transform: rotate(1turn);
+    }
+}
+
+.plats {    
+    &:active .coche {
+        animation: coche 400ms;
+        display: block;
+    }
+
+    @include desktop; tablette {
+        &:hover .coche {
+            animation: coche 400ms;
+            display: block;
+        }
+    }
+    &:active #check {
+        animation: check 400ms;
+    }
+    @include desktop; tablette {
+        &:hover #check {
+            animation: check 400ms;
+        }
+    }
+}
+
+.coche {  
+    display: none;
+    width: 100px;
+    margin-top: -57px;
+    height: 100px;
+    border-radius: 0 25px 25px 0;
+    background-color: $vert;
+    
+    #check {
+        color: white;
+        font-size: 150%;
+        margin-top: 25%;
+        margin-left: 25%;
+    }
+}
