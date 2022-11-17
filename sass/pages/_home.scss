@@ -11,7 +11,6 @@
     }
 
     100% {
-        display: none;
         opacity: 0;
     }
 }
@@ -37,7 +36,6 @@
 @keyframes ustensils {
     0% {
        opacity: 0;
-        
     }
 
     30% {
@@ -56,7 +54,6 @@
 @keyframes ohmyfood {
     0% {
        opacity: 0;
-        
     }
 
     30% {
@@ -101,29 +98,28 @@
     }
   
     .interieur {
-    
-    background: linear-gradient($rose, $violet);
-    width: 90%;
-    height: 90%;
-    border-radius: 180px;
-    margin-left: 5%;
-    margin-top: 5%;
+        background: linear-gradient($rose, $violet);
+        width: 90%;
+        height: 90%;
+        border-radius: 180px;
+        margin-left: 5%;
+        margin-top: 5%;
    
-    #ustensils {
-        color: white;
-        font-size: 600%;
-        margin-left: 39%;
-        margin-top: 10%; 
-        opacity: 0;
-    }
+        #ustensils {
+            color: white;
+            font-size: 600%;
+            margin-left: 39%;
+            margin-top: 10%; 
+            opacity: 0;
+        }
 
-    #ohmyfood {
-        filter: invert(100%);
-        margin-top: 26%;
-        margin-left: 22%;
-        opacity: 0;
+        #ohmyfood {
+            filter: invert(100%);
+            margin-top: 26%;
+            margin-left: 22%;
+            opacity: 0;
+        }
     }
-  }
 }  
 
 /*presentation*/
@@ -198,7 +194,7 @@
         color: white;
         background-color: $violet;
         margin-top: 107px;
-        margin-left: 5.5%;
+        margin-left: 42px;
         border-radius: 30px;
     }
     
@@ -218,12 +214,13 @@
         width: 86%;
         height: 150px;
         margin-top: 50px;
-        margin-left: 9%;
+        margin-left: 64px;
         align-items: center;
         background-color: $fond;
         border-radius: 60px;
         box-shadow: $shadow;
-        
+        cursor: pointer;
+    
         &:hover {
             background-color: #f4ecfd;
             box-shadow: 6px 6px 20px;

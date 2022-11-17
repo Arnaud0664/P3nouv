@@ -47,6 +47,7 @@
         border-radius: 25px;
         background-color: white;
         opacity: 0;
+        cursor: pointer;
         animation: apparition 1500ms 400ms forwards;
 
         &_description {
