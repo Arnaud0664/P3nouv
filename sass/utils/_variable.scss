@@ -1,28 +1,16 @@
 
+$violet: #9356DC;
+$rose: #FF79DA;
+$vert: #99E2D0;
+$fond: rgb(248, 248, 248);
+$violetlight: #a070db;
+$roselight: #ff96e1;
+$titre: 3.2rem;
+$texte: 1.9rem;
+$shadow: 3px 3px 20px rgb(200, 200, 200);
 $breakpoints: (
-    tablette: 992px,
-    desktop: 1400px
+    tablette: 768px,
+    desktop: 992px
 );
 
 
-
-@mixin tablette {
-    @media screen and (min-width: map-get($breakpoints, tablette)) {
-        @content;
-    }
-}
-
-@mixin desktop {
-    @media screen and (min-width: map-get($breakpoints, desktop)) {
-        @content;
-    }
-}
-/*ex
-.proj-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  @include mobile{
-      grid-template-columns: 1fr;
-  }
-}
-*/

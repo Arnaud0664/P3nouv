@@ -9,6 +9,10 @@
 
     .logo1 {
     width: 280px;
+
+    @include tablette {
+        width: 400px;
+    }
     }
 }
 
@@ -33,6 +37,9 @@
     width: 100%;
     height: 380px;
     background-color: rgb(60, 60, 60);
+    @include tablette {
+        text-align: center;
+    }
     
     &_logo {
         padding-left: 40px;

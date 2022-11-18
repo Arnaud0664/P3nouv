@@ -1,16 +1,7 @@
 @charset "UTF-8";
-/*ex
-.proj-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  @include mobile{
-      grid-template-columns: 1fr;
-  }
-}
-*/
 body {
   font-family: "Roboto", sans-serif;
-  width: 768px;
+  width: 100%;
 }
 
 a {
@@ -124,6 +115,11 @@ a:visited {
 .logohead .logo1 {
   width: 280px;
 }
+@media screen and (min-width: 768px) {
+  .logohead .logo1 {
+    width: 400px;
+  }
+}
 
 /* header menus */
 .logohead2 {
@@ -143,6 +139,11 @@ a:visited {
   width: 100%;
   height: 380px;
   background-color: rgb(60, 60, 60);
+}
+@media screen and (min-width: 768px) {
+  .footer {
+    text-align: center;
+  }
 }
 .footer_logo {
   padding-left: 40px;
@@ -329,16 +330,17 @@ a:visited {
 }
 
 /* fonctionnement */
+h3 {
+  font-size: 3.2rem;
+  padding-left: 5%;
+  padding-top: 50px;
+  word-wrap: break-word;
+  hyphens: auto;
+}
+
 .fonctionnement {
   width: 100%;
   box-sizing: border-box;
-}
-.fonctionnement h3 {
-  font-size: 3.2rem;
-  padding-left: 5%;
-  padding-top: 100px;
-  word-wrap: break-word;
-  hyphens: auto;
 }
 .fonctionnement .iconechiffre {
   position: absolute;
@@ -351,8 +353,19 @@ a:visited {
   margin-left: 42px;
   border-radius: 30px;
 }
+@media screen and (min-width: 768px) {
+  .fonctionnement .iconechiffre {
+    margin-top: 50px;
+    margin-left: 50%;
+  }
+}
 .fonctionnement .iconechiffre1 {
   margin-top: 57px;
+}
+@media screen and (min-width: 768px) {
+  .fonctionnement .iconechiffre1 {
+    margin-top: 0px;
+  }
 }
 .fonctionnement .chiffre {
   padding-left: 30%;

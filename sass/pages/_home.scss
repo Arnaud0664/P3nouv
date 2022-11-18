@@ -174,17 +174,17 @@
 
 /* fonctionnement */
 
+h3 {
+    font-size: $titre;
+    padding-left: 5%;
+    padding-top: 50px;
+    word-wrap: break-word;
+    hyphens: auto;
+}
+
 .fonctionnement {
     width: 100%;
     box-sizing: border-box;
-
-    h3 {
-        font-size: $titre;
-        padding-left: 5%;
-        padding-top: 100px;
-        word-wrap: break-word;
-        hyphens: auto;
-    }
 
     .iconechiffre {
         position: absolute;
@@ -196,10 +196,18 @@
         margin-top: 107px;
         margin-left: 42px;
         border-radius: 30px;
-    }
+        @include tablette {
+            margin-top: 50px;
+            margin-left: 50%;
+        }
+    }   
+    
     
     .iconechiffre1 {
         margin-top: 57px;
+        @include tablette {
+            margin-top: 0px;
+        }
     }   
 
     .chiffre {
