@@ -389,6 +389,16 @@ h3 {
   word-wrap: break-word;
   hyphens: auto;
 }
+@media screen and (min-width: 768px) {
+  h3 {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 992px) {
+  h3 {
+    text-align: start;
+  }
+}
 
 .fonctionnement {
   width: 100%;
@@ -402,7 +412,7 @@ h3 {
   color: white;
   background-color: #9356DC;
   margin-top: 107px;
-  margin-left: 42px;
+  margin-left: 4%;
   border-radius: 30px;
 }
 @media screen and (min-width: 768px) {
@@ -440,7 +450,7 @@ h3 {
   width: 86%;
   height: 150px;
   margin-top: 50px;
-  margin-left: 64px;
+  margin-left: 7%;
   align-items: center;
   background-color: rgb(248, 248, 248);
   border-radius: 60px;
@@ -487,9 +497,15 @@ h3 {
   word-wrap: break-word;
   hyphens: auto;
 }
+@media screen and (min-width: 768px) {
+  .restaurants h4 {
+    text-align: center;
+  }
+}
 @media screen and (min-width: 992px) {
   .restaurants h4 {
     padding-left: 5%;
+    text-align: start;
   }
 }
 .restaurants .cartes {

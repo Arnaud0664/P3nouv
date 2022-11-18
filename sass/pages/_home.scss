@@ -199,6 +199,12 @@ h3 {
     padding-top: 50px;
     word-wrap: break-word;
     hyphens: auto;
+    @include tablette {
+        text-align: center;
+    }
+    @include desktop {
+        text-align: start;
+    }
 }
 
 .fonctionnement {
@@ -213,7 +219,7 @@ h3 {
         color: white;
         background-color: $violet;
         margin-top: 107px;
-        margin-left: 42px;
+        margin-left: 4%;
         border-radius: 30px;
         @include tablette {
             margin-top: 50px;
@@ -248,7 +254,7 @@ h3 {
         width: 86%;
         height: 150px;
         margin-top: 50px;
-        margin-left: 64px;
+        margin-left: 7%;
         align-items: center;
         background-color: $fond;
         border-radius: 60px;
@@ -296,8 +302,12 @@ h3 {
         padding-left: 40px;
         word-wrap: break-word;
         hyphens: auto;
+        @include tablette {
+            text-align: center;
+        }
         @include desktop {
             padding-left: 5%;
+            text-align: start;
         }
     }
 
