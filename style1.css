@@ -342,6 +342,11 @@ h3 {
   width: 100%;
   box-sizing: border-box;
 }
+@media screen and (min-width: 992px) {
+  .fonctionnement {
+    display: flex;
+  }
+}
 .fonctionnement .iconechiffre {
   position: absolute;
   font-size: 26px;
@@ -357,6 +362,13 @@ h3 {
   .fonctionnement .iconechiffre {
     margin-top: 50px;
     margin-left: 50%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .fonctionnement .iconechiffre {
+    margin-left: 0;
+    margin-top: 0;
+    position: inherit;
   }
 }
 .fonctionnement .iconechiffre1 {
@@ -383,6 +395,11 @@ h3 {
   border-radius: 60px;
   box-shadow: 3px 3px 20px rgb(200, 200, 200);
   cursor: pointer;
+}
+@media screen and (min-width: 992px) {
+  .fonctionnement .fonction {
+    width: 25%;
+  }
 }
 .fonctionnement .fonction:hover {
   background-color: #f4ecfd;

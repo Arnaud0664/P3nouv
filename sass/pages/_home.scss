@@ -185,6 +185,9 @@ h3 {
 .fonctionnement {
     width: 100%;
     box-sizing: border-box;
+    @include desktop {
+        display: flex;
+    }
 
     .iconechiffre {
         position: absolute;
@@ -199,6 +202,11 @@ h3 {
         @include tablette {
             margin-top: 50px;
             margin-left: 50%;
+        }
+        @include desktop {
+            margin-left: 0;
+            margin-top: 0;
+            position: inherit;
         }
     }   
     
@@ -228,6 +236,9 @@ h3 {
         border-radius: 60px;
         box-shadow: $shadow;
         cursor: pointer;
+        @include desktop {
+            width: 25%;
+        }
     
         &:hover {
             background-color: #f4ecfd;
