@@ -6,12 +6,19 @@
     width: 100%;
     margin-top: 6%;
     margin-bottom: 3%;
+    @include desktop {
+        justify-content: flex-start;
+    }
 
     .logo1 {
     width: 280px;
     @include tablette {
         width: 400px;
     }
+    @include desktop {
+        padding-left: 5%;
+    }
+
     }
 }
 
@@ -38,6 +45,10 @@
     background-color: rgb(60, 60, 60);
     @include tablette {
         text-align: center;
+    }
+    
+    @include desktop {
+        text-align: start;
     }
     
     &_logo {

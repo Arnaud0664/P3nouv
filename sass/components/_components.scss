@@ -20,7 +20,17 @@
         background-clip: text;
         -webkit-background-clip: text;
         color: transparent;
+    }
+    @include desktop {
+        &:hover {
+            opacity: 1;
+            background-image: linear-gradient($violet, $rose);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+        }
     } 
+    
 }
 
 #fa_regular {
