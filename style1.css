@@ -476,14 +476,14 @@ h3 {
 .restaurants .cartes .nouveau {
   background-color: #99E2D0;
   color: #0d9875;
-  font-size: 130%;
+  font-size: 125%;
   font-weight: bold;
   line-height: 50px;
   text-align: center;
-  width: 16%;
+  width: 13%;
   height: 50px;
-  margin-top: 5%;
-  margin-left: 66%;
+  margin-top: 3%;
+  margin-left: 74%;
   position: absolute;
   z-index: 2;
   border-radius: 3px;
