@@ -8,14 +8,19 @@
     margin-bottom: 3%;
 
     .logo1 {
-        width: 280px;
+        width: 200px;
         @include tablette {
-            width: 400px;
+            width: 210px;
+        }
+        @include desktop {
+            width: 250px;
         }
     }
 }
 
+
 /* header menus */
+
 .logohead2 {
     display: flex;
     justify-content: space-evenly;

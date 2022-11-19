@@ -122,11 +122,16 @@ a:visited {
   margin-bottom: 3%;
 }
 .logohead .logo1 {
-  width: 280px;
+  width: 200px;
 }
 @media screen and (min-width: 768px) {
   .logohead .logo1 {
-    width: 400px;
+    width: 210px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .logohead .logo1 {
+    width: 250px;
   }
 }
 
@@ -154,11 +159,6 @@ a:visited {
     text-align: center;
   }
 }
-@media screen and (min-width: 992px) {
-  .footer {
-    text-align: start;
-  }
-}
 .footer_logo {
   padding-left: 40px;
   padding-top: 50px;
@@ -167,7 +167,7 @@ a:visited {
   filter: invert(100%);
 }
 .footer ul {
-  font-size: 1.7rem;
+  font-size: 1.4rem;
   list-style-type: none;
 }
 .footer ul li {
@@ -294,7 +294,7 @@ a:visited {
   box-sizing: border-box;
 }
 .presentation .recherche {
-  font-size: 30px;
+  font-size: 20px;
   width: 100%;
   height: 60px;
   align-items: center;
@@ -303,31 +303,42 @@ a:visited {
   justify-content: center;
   box-shadow: 0px -3px 5px rgb(200, 200, 200);
 }
+@media screen and (min-width: 768px) {
+  .presentation .recherche {
+    font-size: 22px;
+  }
+}
 .presentation .recherche_icone {
-  padding-right: 40px;
+  padding-right: 28px;
+}
+@media screen and (min-width: 768px) {
+  .presentation .recherche_icone {
+    padding-right: 30px;
+  }
 }
 .presentation h1 {
-  font-size: 3rem;
+  font-size: 2rem;
   text-align: center;
-  width: 75%;
-  padding-left: 9%;
+  width: 100%;
   padding-top: 35px;
 }
 .presentation h2 {
-  font-size: 35px;
+  font-size: 24px;
   font-weight: 100;
   text-align: center;
   width: 82%;
   padding-left: 8%;
 }
-.presentation .button {
+.presentation .bouton {
   display: flex;
   justify-content: center;
 }
-.presentation .home_btn {
-  font-size: 28px;
+.presentation .bouton_accueil {
+  font-size: 22px;
   height: 90px;
   margin-top: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
   background: linear-gradient(#FF79DA, #9356DC);
   color: white;
   border: transparent;
@@ -338,14 +349,14 @@ a:visited {
   width: 100%;
   margin-bottom: 50px;
 }
-.presentation .home_btn:hover {
+.presentation .bouton_accueil:hover {
   background: linear-gradient(#ff96e1, #a070db);
   box-shadow: 10px 10px 20px rgb(128, 128, 128);
 }
 
 /* fonctionnement */
 h3 {
-  font-size: 3rem;
+  font-size: 2rem;
   padding-left: 5%;
   padding-top: 50px;
   word-wrap: break-word;
@@ -354,6 +365,7 @@ h3 {
 @media screen and (min-width: 768px) {
   h3 {
     text-align: center;
+    padding-left: 0;
   }
 }
 
@@ -375,18 +387,13 @@ h3 {
 @media screen and (min-width: 768px) {
   .fonctionnement .iconechiffre {
     margin-top: 180px;
-    margin-left: 50%;
+    margin-left: 49%;
   }
 }
 .fonctionnement .iconechiffre1 {
   margin-top: 57px;
 }
 @media screen and (min-width: 768px) {
-  .fonctionnement .iconechiffre1 {
-    margin-top: 0;
-  }
-}
-@media screen and (min-width: 992px) {
   .fonctionnement .iconechiffre1 {
     margin-top: 130px;
   }
@@ -397,7 +404,7 @@ h3 {
 }
 .fonctionnement .fonction {
   display: flex;
-  font-size: 1.7rem;
+  font-size: 1.4rem;
   width: 86%;
   height: 150px;
   margin-top: 50px;
@@ -411,6 +418,8 @@ h3 {
 @media screen and (min-width: 768px) {
   .fonctionnement .fonction {
     justify-content: center;
+    width: 60%;
+    margin-left: 20%;
   }
 }
 .fonctionnement .fonction:hover {
@@ -441,7 +450,7 @@ h3 {
   }
 }
 .restaurants h4 {
-  font-size: 3rem;
+  font-size: 2rem;
   padding-top: 90px;
   padding-left: 40px;
   word-wrap: break-word;
@@ -510,7 +519,7 @@ h3 {
 }
 .restaurants .cartes .bloc .corps {
   display: flex;
-  font-size: 1.7rem;
+  font-size: 1.4rem;
   padding-top: 3%;
   margin-left: 4%;
   height: 10%;
@@ -530,7 +539,7 @@ h3 {
 }
 .restaurants .cartes .bloc .lieu {
   width: 100%;
-  font-size: 1.7rem;
+  font-size: 1.4rem;
   margin-left: 4%;
 }
 
@@ -544,7 +553,7 @@ h3 {
   width: 100%;
   box-sizing: border-box;
   margin-top: -8%;
-  font-size: 1.7rem;
+  font-size: 1.4rem;
   border-radius: 50px 50px 0 0;
   background-color: rgb(248, 248, 248);
   position: relative;
@@ -553,7 +562,7 @@ h3 {
   display: flex;
   justify-content: space-between;
   width: 75%;
-  font-size: 3rem;
+  font-size: 2rem;
   padding-top: 60px;
   padding-left: 4%;
 }
@@ -613,9 +622,11 @@ h3 {
   padding-bottom: 50px;
 }
 .menu_btn {
-  font-size: 28px;
+  font-size: 22px;
   height: 90px;
   margin-top: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
   background: linear-gradient(#FF79DA, #9356DC);
   color: white;
   border: transparent;
