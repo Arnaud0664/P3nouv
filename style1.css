@@ -84,21 +84,21 @@ a:visited {
   }
 }
 .plats:active .coche {
-  animation: coche 400ms;
+  animation: coche 600ms;
   display: block;
 }
 @media screen and (min-width: 992px) {
   .plats:hover .coche {
-    animation: coche 400ms;
+    animation: coche 600ms;
     display: block;
   }
 }
 .plats:active #check {
-  animation: check 400ms;
+  animation: check 600ms;
 }
 @media screen and (min-width: 992px) {
   .plats:hover #check {
-    animation: check 400ms;
+    animation: check 600ms;
   }
 }
 
@@ -110,11 +110,21 @@ a:visited {
   border-radius: 0 25px 25px 0;
   background-color: #99E2D0;
 }
+@media screen and (min-width: 992px) {
+  .coche {
+    margin-top: -57px;
+  }
+}
 .coche #check {
   color: white;
   font-size: 150%;
   margin-top: 34px;
   margin-left: 33%;
+}
+@media screen and (min-width: 992px) {
+  .coche #check {
+    margin-left: 31%;
+  }
 }
 
 /* header */
@@ -577,17 +587,36 @@ h3 {
   padding-top: 60px;
   padding-left: 4%;
 }
+@media screen and (min-width: 992px) {
+  .menu_titre {
+    padding-left: 2%;
+  }
+}
 .menu_titre .nom {
   width: 100%;
 }
-.menu .intitulé {
+@media screen and (min-width: 992px) {
+  .menu .desktop {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+.menu .desktop .intitulé {
   width: 60px;
   border-bottom: 5px solid #99E2D0;
   margin-bottom: 30px;
   margin-top: 60px;
   margin-left: 4%;
 }
-.menu .plats {
+@media screen and (min-width: 992px) {
+  .menu .desktop .intitulé {
+    width: 100%;
+    margin-left: 2%;
+    border-bottom: 0;
+    border-left: 5px solid #99E2D0;
+  }
+}
+.menu .desktop .plats {
   width: 92%;
   height: 100px;
   margin-bottom: 30px;
@@ -598,7 +627,13 @@ h3 {
   cursor: pointer;
   animation: apparition 1500ms 400ms forwards;
 }
-.menu .plats_description {
+@media screen and (min-width: 992px) {
+  .menu .desktop .plats {
+    width: 31%;
+    margin-left: 1.6%;
+  }
+}
+.menu .desktop .plats_description {
   font-weight: bold;
   width: 75%;
   padding-top: 10px;
@@ -608,28 +643,45 @@ h3 {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.menu .plats_box {
+@media screen and (min-width: 992px) {
+  .menu .desktop .plats_description {
+    font-size: 20px;
+    padding-top: 23px;
+    width: 100%;
+  }
+}
+.menu .desktop .plats_box {
   display: flex;
   justify-content: space-between;
   padding-left: 3%;
 }
-.menu .plats_description2 {
+.menu .desktop .plats_description2 {
   font-size: 23px;
   width: 72%;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.menu .plats_prix {
+@media screen and (min-width: 992px) {
+  .menu .desktop .plats_description2 {
+    font-size: 16px;
+  }
+}
+.menu .desktop .plats_prix {
   font-size: 23px;
   font-weight: bold;
   padding-right: 40px;
+}
+@media screen and (min-width: 992px) {
+  .menu .desktop .plats_prix {
+    font-size: 16px;
+  }
 }
 .menu .bouton {
   text-align: center;
   padding-bottom: 50px;
 }
-.menu_btn {
+.menu .bouton_mod {
   font-size: 22px;
   height: 90px;
   margin-top: 40px;
@@ -644,13 +696,18 @@ h3 {
   transition: all 100ms;
   width: 53%;
 }
-.menu_btn:hover {
+.menu .bouton_mod:hover {
   background: linear-gradient(#ff96e1, #a070db);
   box-shadow: 10px 10px 20px rgb(128, 128, 128);
 }
 @media screen and (min-width: 768px) {
-  .menu_btn {
+  .menu .bouton_mod {
     width: 40%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .menu .bouton_mod {
+    width: 30%;
   }
 }
 

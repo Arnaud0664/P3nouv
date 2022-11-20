@@ -75,22 +75,22 @@
 
 .plats {    
     &:active .coche {
-        animation: coche 400ms;
+        animation: coche 600ms;
         display: block;
     }
 
     @include desktop {
         &:hover .coche {
-            animation: coche 400ms;
+            animation: coche 600ms;
             display: block;
         }
     }
     &:active #check {
-        animation: check 400ms;
+        animation: check 600ms;
     }
     @include desktop {
         &:hover #check {
-            animation: check 400ms;
+            animation: check 600ms;
         }
     }
 }
@@ -102,11 +102,17 @@
     height: 100px;
     border-radius: 0 25px 25px 0;
     background-color: $vert;
+    @include desktop {
+        margin-top: -57px;
+    }
     
     #check {
         color: white;
         font-size: 150%;
         margin-top: 34px;
         margin-left: 33%;
+        @include desktop {
+            margin-left: 31%;
+        }
     }
 }

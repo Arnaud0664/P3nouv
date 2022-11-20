@@ -21,6 +21,9 @@
         font-size: $titre;
         padding-top: 60px;
         padding-left: 4%;
+        @include desktop {
+            padding-left: 2%;
+        }
         
         .nom {
             width: 100%;
@@ -28,63 +31,93 @@
 
     }
 
-    .intitulé {
-        width: 60px;
-        border-bottom: 5px solid $vert;
-        margin-bottom: 30px;
-        margin-top: 60px;
-        margin-left: 4%;
-    }
-
-    .plats {
-        width: 92%;
-        height: 100px;
-        margin-bottom: 30px;
-        margin-left: 3.5%;
-        border-radius: 25px;
-        background-color: white;
-        opacity: 0;
-        cursor: pointer;
-        animation: apparition 1500ms 400ms forwards;
-
-        &_description {
-            font-weight: bold;
-            width: 75%;
-            padding-top: 10px;
-            padding-bottom: 10px;
-            padding-left: 3%;
-            @include rognage;
-        }
-
-        &_box {
+    .desktop {
+        @include desktop {
             display: flex;
-            justify-content: space-between;
-            padding-left: 3%;
+            flex-wrap: wrap;
         }
-        
-        &_description2 {
-            font-size: 23px;
-            width: 72%;
-            @include rognage;
+        .intitulé {
+            width: 60px;
+            border-bottom: 5px solid $vert;
+            margin-bottom: 30px;
+            margin-top: 60px;
+            margin-left: 4%;
+            @include desktop {
+                width: 100%;
+                margin-left: 2%;
+                border-bottom: 0;
+                border-left: 5px solid $vert;
+            }
         }
 
-        &_prix {
-            font-size: 23px;
-            font-weight: bold;
-            padding-right: 40px;
+        .plats {
+            width: 92%;
+            height: 100px;
+            margin-bottom: 30px;
+            margin-left: 3.5%;
+            border-radius: 25px;
+            background-color: white;
+            opacity: 0;
+            cursor: pointer;
+            animation: apparition 1500ms 400ms forwards;
+            @include desktop {
+                width: 31%;
+                margin-left: 1.6%;
+            }
+
+            &_description {
+                font-weight: bold;
+                width: 75%;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                padding-left: 3%;
+                @include rognage;
+                @include desktop {
+                   font-size: 20px;
+                   padding-top: 23px;
+                   width: 100%;
+                }
+            }
+
+            &_box {
+                display: flex;
+                justify-content: space-between;
+                padding-left: 3%;
+            }
+            
+            &_description2 {
+                font-size: 23px;
+                width: 72%;
+                @include rognage;
+                @include desktop {
+                    font-size: 16px;
+                }
+            }
+
+            &_prix {
+                font-size: 23px;
+                font-weight: bold;
+                padding-right: 40px;
+                @include desktop {
+                    font-size: 16px;
+                }
+            }
         }
-    }
-    
+    } 
+
     .bouton {
         text-align: center;
         padding-bottom: 50px;
-    }
 
-    &_btn {
-        @include bouton;
-        width: 53%;
-        @include tablette {
-            width: 40%;
+        &_mod {
+            @include bouton;
+            width: 53%;
+            @include tablette {
+                width: 40%;
+            }
+            @include desktop {
+                width: 30%;
+            }
         }
     }
 }
