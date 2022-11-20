@@ -79,7 +79,7 @@
         display: block;
     }
 
-    @include desktop; tablette {
+    @include desktop {
         &:hover .coche {
             animation: coche 400ms;
             display: block;
@@ -88,7 +88,7 @@
     &:active #check {
         animation: check 400ms;
     }
-    @include desktop; tablette {
+    @include desktop {
         &:hover #check {
             animation: check 400ms;
         }

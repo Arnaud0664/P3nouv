@@ -26,9 +26,6 @@
             width: 100%;
         }
 
-        .coeur {
-            padding-top: 2%;
-        }
     }
 
     .intitulé {
@@ -78,13 +75,16 @@
         }
     }
     
-    .button {
+    .bouton {
         text-align: center;
         padding-bottom: 50px;
     }
 
     &_btn {
         @include bouton;
-        width: 58%;
+        width: 53%;
+        @include tablette {
+            width: 40%;
+        }
     }
 }
