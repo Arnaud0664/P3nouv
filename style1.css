@@ -101,7 +101,7 @@ a:visited {
 .coche {
   display: none;
   width: 100px;
-  margin-top: -57px;
+  margin-top: -47px;
   height: 100px;
   border-radius: 0 25px 25px 0;
   background-color: #99E2D0;
@@ -109,8 +109,8 @@ a:visited {
 .coche #check {
   color: white;
   font-size: 150%;
-  margin-top: 25%;
-  margin-left: 25%;
+  margin-top: 34px;
+  margin-left: 33%;
 }
 
 /* header */
@@ -139,6 +139,7 @@ a:visited {
 .logohead2 {
   display: flex;
   justify-content: space-evenly;
+  align-items: baseline;
 }
 .logohead2 .logo2 {
   padding-right: 16%;
