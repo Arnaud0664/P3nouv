@@ -12,10 +12,10 @@
     <title>ohmyfood</title>
   </head>
   <body>
-    <div class="loader">
+    <div class="loade">
         <div class="contour">
             <div class="interieur">
-                <div><img id="ohmyfood" src="images\logo\ohmyfood@2x.svg" alt="logo"></div>
+                <div><img id="ohmyfood" src="images/logo/ohmyfood@2x.svg" alt="logo"></div>
                 <i id="ustensils" class="fa-solid fa-utensils"></i>
             </div>
         </div>
@@ -32,9 +32,9 @@
             <h1>Réservez le menu qui vous convient</h1>
             <h2>Découvrez des restaurants d'exception, sélectionnés par nos soins.</h2>
             <div class="bouton">
-                <a href="fauxlien.php">
+                <form method="post" action="fauxlien.php">
                   <button class="bouton_accueil">Explorer nos restaurants</button>
-                </a>
+                </form>
             </div>
         </section>
     </header>
@@ -43,19 +43,23 @@
         <section class="fonctionnement">
             <div class="iconechiffre iconechiffre1"><div class="chiffre">1</div></div>
             <div class="fonction">
-                <div class="fonction_icone"><i class="fa-solid fa-mobile-screen-button"></i></div>
+                <div class="fonction_icone">
+                    <img class="iconesfonc" src="images/logo/telephone-intelligent.svg" alt="mobile">
+                </div>
                 <div class="fonction_texte">Choisissez un restaurant</div>
             </div>
             <div class="iconechiffre"><div class="chiffre">2</div></div>
             <div class="fonction">
                 <div class="fonction_icone">
-                    <i class="fa-solid fa-list-ul"></i>
+                    <img class="iconesfonc" src="images/logo/liste.svg" alt="liste">
                 </div>
                 <div class="fonction_texte">Composer votre menu</div>
             </div>
             <div class="iconechiffre"><div class="chiffre">3</div></div>
             <div class="fonction">
-                <div class="fonction_icone"><i class="fa-sharp fa-solid fa-store"></i></div>
+                <div class="fonction_icone">
+                    <img class="iconesfonc" src="images/logo/store-alt.svg" alt="magasin">
+                </div>
                 <div class="fonction_texte">Dégustez au restaurant</div>
             </div>
         </section>
@@ -91,8 +95,8 @@
                     <div class="corps">
                         <div class="corps_nom">La note enchantée</div>
                         <div class="corps_coeur">
-                            <div><i id="fa_regular" class="fa-regular fa-heart"></i></div>
-                            <div><i id="fa_solid" class="fa-solid fa-heart"></i></div>
+                            <div><i class="fa-regular fa-heart"></i></div>
+                            <div><i class="fa-solid fa-heart"></i></div>
                         </div>
                     </div>
                     <div class="lieu">Charonne</div>
@@ -100,14 +104,14 @@
                 <div class="bloc">
                     <a href="menu3.html">
                         <div class="bloc_photo">
-                            <img id="lafrance" src="images\restaurants\toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="plat_restaurant">
+                            <img id="lafrance" src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="plat_restaurant">
                         </div>
                     </a>
                     <div class="corps">
                         <div class="corps_nom">A la française</div>
                         <div class="corps_coeur">
-                            <div><i id="fa_regular" class="fa-regular fa-heart"></i></div>
-                            <div><i id="fa_solid" class="fa-solid fa-heart"></i></div>
+                            <div><i class="fa-regular fa-heart"></i></div>
+                            <div><i class="fa-solid fa-heart"></i></div>
                         </div>
                     </div>
                     <div class="lieu">Cité Rouge</div>
@@ -115,14 +119,14 @@
                 <div class="bloc">
                     <a href="menu4.html">
                         <div class="bloc_photo">
-                            <img id="ledelice" src="images\restaurants\louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="plat_restaurant">
+                            <img id="ledelice" src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="plat_restaurant">
                         </div>
                     </a>
                     <div class="corps">
                         <div class="corps_nom">Le délice des sens</div>
                         <div class="corps_coeur">
-                            <div><i id="fa_regular" class="fa-regular fa-heart"></i></div>
-                            <div><i id="fa_solid" class="fa-solid fa-heart"></i></div>
+                            <div><i class="fa-regular fa-heart"></i></div>
+                            <div><i class="fa-solid fa-heart"></i></div>
                         </div>
                     </div>
                     <div class="lieu">Folie-Méricourt</div>
@@ -133,11 +137,11 @@
     <footer>
         <div class="footer">
             <div class="footer_logo">
-                <img id="logo2" src="images\logo\ohmyfood@2x.svg" alt="logo">
+                <img id="logo2" src="images/logo/ohmyfood@2x.svg" alt="logo">
             </div>
             <ul>
-                <li><i class="fa-solid fa-utensils"></i><span class="proposer">Proposer un restaurant</span></li>
-                <li><i class="fa-solid fa-handshake-angle"></i><span class="devenir">Devenir partenaire</span></li>
+                <li><img class="icones_ul" src="images/logo/ustensiles.svg" alt="ustensils"><span class="proposer">Proposer un restaurant</span></li>
+                <li><img class="icones_ul" src="images/logo/poignee-de-main.svg" alt="poignée"><span class="devenir">Devenir partenaire</span></li>
                 <li>Mentions légales</li>
                 <a href="mailto:ohmyfood@msn.com" class="mailto">
                     <li>Contact</li>

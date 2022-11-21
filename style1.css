@@ -23,7 +23,7 @@ a:visited {
   height: 100%;
 }
 
-#fa_solid {
+.fa-solid {
   font-size: 50px;
   width: 10%;
   opacity: 0;
@@ -31,7 +31,7 @@ a:visited {
   cursor: pointer;
   transition: all 250ms;
 }
-#fa_solid:active {
+.fa-solid:active {
   opacity: 1;
   background-image: linear-gradient(#9356DC, #FF79DA);
   background-clip: text;
@@ -39,7 +39,7 @@ a:visited {
   color: transparent;
 }
 @media screen and (min-width: 992px) {
-  #fa_solid:hover {
+  .fa-solid:hover {
     opacity: 1;
     background-image: linear-gradient(#9356DC, #FF79DA);
     background-clip: text;
@@ -48,12 +48,12 @@ a:visited {
   }
 }
 
-#fa_regular {
+.fa-regular {
   width: 10%;
   font-size: 50px;
   position: absolute;
 }
-#fa_regular:active {
+.fa-regular:active {
   display: none;
 }
 
@@ -203,8 +203,12 @@ a:visited {
   padding-bottom: 12px;
   color: white;
 }
+.footer ul li .icones_ul {
+  width: 18px;
+  filter: invert(100%);
+}
 .footer ul .proposer {
-  padding-left: 20px;
+  padding-left: 10px;
 }
 .footer ul .devenir {
   padding-left: 10px;
@@ -456,12 +460,18 @@ h3 {
   box-shadow: 6px 6px 20px;
 }
 .fonctionnement .fonction_icone {
-  margin-left: 13%;
+  width: 20px;
+  margin-left: 46px;
+  padding-top: 4px;
+  filter: opacity(0.6);
 }
 @media screen and (min-width: 768px) {
   .fonctionnement .fonction_icone {
     margin-left: 0;
   }
+}
+.fonctionnement .fonction_icone .iconesfonc {
+  width: 22px;
 }
 .fonctionnement .fonction_texte {
   padding-left: 5%;
