@@ -85,11 +85,11 @@
             display: block;
         }
     }
-    &:active #check {
+    &:active .check {
         animation: check 600ms;
     }
     @include desktop {
-        &:hover #check {
+        &:hover .check {
             animation: check 600ms;
         }
     }
@@ -105,12 +105,10 @@
     @include desktop {
         margin-top: -57px;
     }
-    
-    #check {
-        color: white;
-        font-size: 150%;
-        margin-top: 34px;
-        margin-left: 33%;
+    .check {
+        width: 40%;
+        margin-top: 30px;
+        margin-left: 30%;
         @include desktop {
             margin-left: 31%;
         }

@@ -93,11 +93,11 @@ a:visited {
     display: block;
   }
 }
-.plats:active #check {
+.plats:active .check {
   animation: check 600ms;
 }
 @media screen and (min-width: 992px) {
-  .plats:hover #check {
+  .plats:hover .check {
     animation: check 600ms;
   }
 }
@@ -115,14 +115,13 @@ a:visited {
     margin-top: -57px;
   }
 }
-.coche #check {
-  color: white;
-  font-size: 150%;
-  margin-top: 34px;
-  margin-left: 33%;
+.coche .check {
+  width: 40%;
+  margin-top: 30px;
+  margin-left: 30%;
 }
 @media screen and (min-width: 992px) {
-  .coche #check {
+  .coche .check {
     margin-left: 31%;
   }
 }
@@ -151,16 +150,19 @@ a:visited {
 
 /* header menus */
 .logohead2 {
-  display: flex;
+  height: 53px;
   justify-content: space-evenly;
-  align-items: baseline;
 }
 .logohead2 .logo2 {
-  padding-right: 16%;
+  margin-right: 20%;
 }
-.logohead2 #arrow {
-  font-size: 230%;
-  padding-top: 50%;
+@media screen and (min-width: 992px) {
+  .logohead2 .logo2 {
+    margin-right: 27%;
+  }
+}
+.logohead2 .fleche {
+  width: 55px;
 }
 
 /* footer */
@@ -579,9 +581,6 @@ h3 {
 }
 .restaurants .cartes .bloc .corps_coeur {
   padding-right: 20%;
-}
-.restaurants .cartes .bloc .corps #fa_solid {
-  padding-right: 10px;
 }
 .restaurants .cartes .bloc .lieu {
   width: 100%;
