@@ -365,6 +365,9 @@ a:visited {
     padding-right: 30px;
   }
 }
+.presentation .recherche_icone .emplacement {
+  width: 25px;
+}
 .presentation h1 {
   font-size: 2rem;
   text-align: center;
