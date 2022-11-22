@@ -2,6 +2,7 @@
 body {
   font-family: "Roboto", sans-serif;
   width: 100%;
+  margin: 0;
 }
 
 a {
@@ -83,6 +84,18 @@ a:visited {
     transform: rotate(1turn);
   }
 }
+.plats_1 {
+  animation: apparition 2000ms 200ms forwards;
+}
+
+.plats_2 {
+  animation: apparition 2000ms 500ms forwards;
+}
+
+.plats_3 {
+  animation: apparition 2000ms 700ms forwards;
+}
+
 .plats:active .coche {
   animation: coche 600ms;
   display: block;
@@ -201,19 +214,19 @@ a:visited {
     padding-left: 0;
   }
 }
-.footer ul li {
+.footer ul li a {
   padding-bottom: 12px;
   color: white;
 }
-.footer ul li .icones_ul {
+.footer ul li a .icones_ul {
   width: 18px;
   filter: invert(100%);
 }
 .footer ul .proposer {
-  padding-left: 10px;
+  padding-left: 6px;
 }
 .footer ul .devenir {
-  padding-left: 10px;
+  padding-left: 6px;
 }
 .footer ul .mailto {
   text-decoration: none;
@@ -246,7 +259,7 @@ a:visited {
     opacity: 1;
   }
   100% {
-    opacity: 0;
+    opacity: 1;
   }
 }
 @keyframes ustensils {
@@ -313,7 +326,7 @@ a:visited {
 .loader .interieur #ustensils {
   color: white;
   font-size: 600%;
-  margin-left: 39%;
+  margin-left: 34%;
   margin-top: 10%;
   opacity: 0;
 }
@@ -649,7 +662,6 @@ h3 {
   background-color: white;
   opacity: 0;
   cursor: pointer;
-  animation: apparition 1500ms 400ms forwards;
 }
 @media screen and (min-width: 992px) {
   .menu .desktop .plats {

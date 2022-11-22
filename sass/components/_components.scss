@@ -52,7 +52,6 @@
     }
 }
 
-
 @keyframes coche {
     0% {
         transform: translate(115px);
@@ -71,6 +70,18 @@
         transform: rotate(0deg);
         transform: rotate(1turn);
     }
+}
+
+.plats_1   {
+    animation: apparition 2000ms 200ms forwards; 
+}    
+
+.plats_2 {
+    animation: apparition 2000ms 500ms forwards;
+}
+
+.plats_3 {
+    animation: apparition 2000ms 700ms forwards;
 }
 
 .plats {    
